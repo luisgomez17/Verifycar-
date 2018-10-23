@@ -111,10 +111,8 @@ public class ActRegistro extends javax.swing.JInternalFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         comentarios = new javax.swing.JTextArea();
         jLabel6 = new javax.swing.JLabel();
-        btnChat = new javax.swing.JButton();
-        notificacion = new javax.swing.JPanel();
-        lbIcono = new javax.swing.JLabel();
         lbLeido = new javax.swing.JLabel();
+        btnChat = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setBorder(null);
@@ -136,7 +134,6 @@ public class ActRegistro extends javax.swing.JInternalFrame {
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
-        txtOrden.setBackground(new java.awt.Color(255, 255, 255));
         txtOrden.setForeground(new java.awt.Color(51, 51, 51));
         txtOrden.setBorderColor(new java.awt.Color(51, 51, 51));
         txtOrden.setBotonColor(new java.awt.Color(102, 102, 102));
@@ -270,8 +267,8 @@ public class ActRegistro extends javax.swing.JInternalFrame {
         jLabel2.getAccessibleContext().setAccessibleName("Guía No.");
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        tbProcesos.setBackground(new java.awt.Color(255, 255, 255));
         tbProcesos.setForeground(new java.awt.Color(44, 44, 45));
         tbProcesos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -317,7 +314,8 @@ public class ActRegistro extends javax.swing.JInternalFrame {
             tbProcesos.getColumnModel().getColumn(2).setMaxWidth(70);
         }
 
-        comentarios.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 11, 1141, 189));
+
         comentarios.setColumns(20);
         comentarios.setForeground(new java.awt.Color(51, 51, 55));
         comentarios.setLineWrap(true);
@@ -333,9 +331,20 @@ public class ActRegistro extends javax.swing.JInternalFrame {
         });
         jScrollPane2.setViewportView(comentarios);
 
+        jPanel4.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(164, 211, 250, -1));
+
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(51, 51, 55));
         jLabel6.setText("Observaciones:");
+        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(69, 251, -1, -1));
+
+        lbLeido.setBackground(new java.awt.Color(255, 255, 255));
+        lbLeido.setFont(new java.awt.Font("Berlin Sans FB Demi", 1, 18)); // NOI18N
+        lbLeido.setForeground(new java.awt.Color(237, 31, 36));
+        lbLeido.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbLeido.setText("0");
+        lbLeido.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        jPanel4.add(lbLeido, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 230, -1, -1));
 
         btnChat.setBackground(new java.awt.Color(255, 255, 255));
         btnChat.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -352,76 +361,7 @@ public class ActRegistro extends javax.swing.JInternalFrame {
                 btnChatActionPerformed(evt);
             }
         });
-
-        notificacion.setBackground(new java.awt.Color(255, 255, 255));
-
-        javax.swing.GroupLayout notificacionLayout = new javax.swing.GroupLayout(notificacion);
-        notificacion.setLayout(notificacionLayout);
-        notificacionLayout.setHorizontalGroup(
-            notificacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 42, Short.MAX_VALUE)
-        );
-        notificacionLayout.setVerticalGroup(
-            notificacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 31, Short.MAX_VALUE)
-        );
-
-        lbIcono.setBackground(new java.awt.Color(255, 255, 255));
-        lbIcono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/notofi_off.png"))); // NOI18N
-
-        lbLeido.setBackground(new java.awt.Color(255, 255, 255));
-        lbLeido.setFont(new java.awt.Font("Berlin Sans FB Demi", 1, 14)); // NOI18N
-        lbLeido.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbLeido.setText("0");
-        lbLeido.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(69, 69, 69)
-                .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(btnChat, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
-                .addComponent(lbIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1, 1, 1)
-                .addComponent(lbLeido)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(notificacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(11, 11, 11)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(51, 51, 51)
-                        .addComponent(jLabel6))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(45, 45, 45)
-                        .addComponent(notificacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lbIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addComponent(lbLeido))
-                            .addComponent(btnChat, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(328, Short.MAX_VALUE))
-        );
+        jPanel4.add(btnChat, new org.netbeans.lib.awtextra.AbsoluteConstraints(432, 235, 49, 41));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -478,7 +418,7 @@ public class ActRegistro extends javax.swing.JInternalFrame {
             lbCliente.setText(ord.getNomcliente());
             lbAuto.setText(ord.getModelo());
             lbPlaca.setText(ord.getPlaca());
-            
+            System.out.println(ord.getIdorden());
             chat.setId_orden(ord.getIdorden());
             int noleido = Coordinador.mensajesLeidos(chat);
             lbLeido.setText(Integer.toString(noleido));
@@ -623,13 +563,13 @@ public class ActRegistro extends javax.swing.JInternalFrame {
         
         
         if (valor > 0) {
-            icono = new ImageIcon(getClass().getResource("/Imagenes/notifi_on.png"));
-            lbIcono.setIcon(icono);
+            icono = new ImageIcon(getClass().getResource("/Imagenes/Icon_NewMessage_C_48.png"));
+            btnChat.setIcon(icono);
             lbLeido.setVisible(true);            
                         
         } else if(valor == 0) {            
-            icono = new ImageIcon(getClass().getResource("/Imagenes/notofi_off.png"));
-            lbIcono.setIcon(icono);                      
+            icono = new ImageIcon(getClass().getResource("/Imagenes/Icon_NewMessage_48.png"));
+            btnChat.setIcon(icono);                      
             lbLeido.setVisible(false);            
                         
         }
@@ -726,12 +666,10 @@ public class ActRegistro extends javax.swing.JInternalFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JLabel lbAuto;
     private javax.swing.JLabel lbCliente;
-    private javax.swing.JLabel lbIcono;
     public javax.swing.JLabel lbLeido;
     private javax.swing.JLabel lbOrden;
     private javax.swing.JLabel lbPlaca;
     private javax.swing.JList<String> list;
-    private javax.swing.JPanel notificacion;
     private rojerusan.RSTableMetro tbProcesos;
     private rojerusan.RSMetroTextFullPlaceHolder txtOrden;
     // End of variables declaration//GEN-END:variables

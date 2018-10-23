@@ -86,7 +86,6 @@ private Coordinador miCoordinador;
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        comentario.setBackground(new java.awt.Color(255, 255, 255));
         comentario.setColumns(20);
         comentario.setForeground(new java.awt.Color(51, 51, 55));
         comentario.setLineWrap(true);
@@ -234,7 +233,9 @@ comentario.setText("");
         label.setLineWrap(true);        
         label.setEditable(false);
         label.setWrapStyleWord(true);
-         LineBorder line = new LineBorder(Color.WHITE, 4, true); // color, thickness, rounded
+        System.setProperty("myColor", "0XF7423F");
+        Color myColor = Color.getColor("myColor"); 
+         LineBorder line = new LineBorder(myColor, 2, true); // color, thickness, rounded
     label.setBorder(line);
     //add(label, BorderLayout.CENTER);
         

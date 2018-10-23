@@ -13,7 +13,7 @@ public class ordenDao {
         ordenVo or = new ordenVo();
         try {
             PreparedStatement preparedStatement = conn.getConn().prepareStatement(
-                    "SELECT o.numorden, o.id_cliente, o.id_auto, cl.nombre_cliente, au.placa, au.modelo, o.id_cliente "
+                    "SELECT o.numorden, o.id_cliente, o.id_auto, cl.nombre_cliente, au.placa, au.modelo, o.idorden "
                     + " FROM orden as o  "
                     + "JOIN cliente as cl  on cl.idcliente = o.id_cliente "
                     + "JOIN auto as au on au.idauto = o.id_auto "
