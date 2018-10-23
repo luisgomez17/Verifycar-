@@ -39,21 +39,22 @@ import javax.swing.JOptionPane;
 import rojerusan.RSPanelsSlider;
 
 public class Registro extends javax.swing.JInternalFrame {
-
+    
     public int idadmin;
     private Coordinador miCoordinador;
     DefaultListModel modelos = new DefaultListModel();
-
+    
     Vector descrip = new Vector(20);
     Vector idserv = new Vector(20);
     Vector idservselec = new Vector(20);
     Vector idauto = new Vector(20);
     Vector idcliente = new Vector(20);
     String nombretaller;
-
+    
     Vector datoscarro = new Vector(20);
     int contadordescripcion = 1;
     Tipografia tipoFuente;
+    
     public Registro() {
         initComponents();
         enableComponents(panelCliente, false);
@@ -62,16 +63,16 @@ public class Registro extends javax.swing.JInternalFrame {
         // enableComponents(panelAuto,false);
         tipoFuente = new Tipografia();
         //cuerpo = new Fuentes();
-        jLabel1.setFont(tipoFuente.fuente(tipoFuente.PTD,2, 30));
+        jLabel1.setFont(tipoFuente.fuente(tipoFuente.PTD, 2, 30));
         //jPanel9.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "BUSCAR CLIENTE", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font(tipoFuente.fuente(tipoFuente.PTD,2, 30)), new java.awt.Color(51, 51, 55))); // NOI18N
-        jPanel9.setFont(tipoFuente.fuente(tipoFuente.PTD,2, 30));
+        jPanel9.setFont(tipoFuente.fuente(tipoFuente.PTD, 2, 30));
     }
-
+    
     public void setCoordinador(Coordinador miCoordinador) {
         this.miCoordinador = miCoordinador;
         //this.getUsuario(1);
     }
-
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -134,6 +135,8 @@ public class Registro extends javax.swing.JInternalFrame {
         btnfinalizar = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         btnAgregar = new javax.swing.JButton();
+        jPanel4 = new javax.swing.JPanel();
+        txtGuia = new rojerusan.RSMetroTextFullPlaceHolder();
         registrofinalizado = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jPanel13 = new javax.swing.JPanel();
@@ -935,6 +938,31 @@ public class Registro extends javax.swing.JInternalFrame {
                 .addContainerGap(18, Short.MAX_VALUE))
         );
 
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Numero de guia", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
+
+        txtGuia.setForeground(new java.awt.Color(0, 0, 0));
+        txtGuia.setBorderColor(new java.awt.Color(0, 0, 0));
+        txtGuia.setBotonColor(new java.awt.Color(0, 0, 0));
+        txtGuia.setPhColor(new java.awt.Color(153, 153, 153));
+        txtGuia.setPlaceholder("Ingrese numero de guia");
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(txtGuia, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(44, 44, 44)
+                .addComponent(txtGuia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout registroservicioLayout = new javax.swing.GroupLayout(registroservicio);
         registroservicio.setLayout(registroservicioLayout);
         registroservicioLayout.setHorizontalGroup(
@@ -949,8 +977,10 @@ public class Registro extends javax.swing.JInternalFrame {
                             .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jPanel7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(100, 100, 100)
-                        .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(50, Short.MAX_VALUE))
+                        .addGroup(registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap(470, Short.MAX_VALUE))
                     .addGroup(registroservicioLayout.createSequentialGroup()
                         .addComponent(btnatras)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -968,7 +998,9 @@ public class Registro extends javax.swing.JInternalFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
@@ -1078,7 +1110,7 @@ public class Registro extends javax.swing.JInternalFrame {
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(rSPanelsSlider2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 669, Short.MAX_VALUE)
+            .addComponent(rSPanelsSlider2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 669, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -1100,7 +1132,7 @@ public class Registro extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnsiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsiguienteActionPerformed
-
+        
         if (listCliente.getSelectedIndex() != -1) {
             if (listAuto.getSelectedIndex() != -1) {
                 if (!this.btnsiguiente.isSelected()) {
@@ -1132,25 +1164,30 @@ public class Registro extends javax.swing.JInternalFrame {
         Date sistemaFech = new Date();
         SimpleDateFormat formato = new SimpleDateFormat("yyyy-MM-dd");
         if (!this.btnfinalizar.isSelected()) {
-            ordenVo orden = new ordenVo();
-            orden.setIdcliente(Integer.parseInt(lblIdCliente.getText()));
-            orden.setIdauto(Integer.parseInt(String.valueOf(idauto.elementAt(listAuto.getSelectedIndex()))));
-            orden.setNumorden(numerodeOrden());
-            miCoordinador.agregarOrden(orden);
-            if (idservselec.size() != 0) {
-
-                for (int i = 0; i < idservselec.size(); i++) {
-                    procesoVo proc = new procesoVo();
-                    proc.setImagen_proceso("");
-                    proc.setObservaciones(String.valueOf(descrip.elementAt(i)));
-                    proc.setFecha_inicio(formato.format(sistemaFech));
-                    proc.setId_servicio(Integer.parseInt(String.valueOf(idservselec.elementAt(i))));
-                    proc.setId_orden(IdOrden());
-                    miCoordinador.agregarProceso(proc);
+            if (!txtGuia.getText().equals("")) {
+                if (idservselec.size() != 0) {
+                    ordenVo orden = new ordenVo();
+                    orden.setIdcliente(Integer.parseInt(lblIdCliente.getText()));
+                    orden.setIdauto(Integer.parseInt(String.valueOf(idauto.elementAt(listAuto.getSelectedIndex()))));
+                    orden.setNumorden(txtGuia.getText());
+                    //orden.setNumorden(numerodeOrden());
+                    miCoordinador.agregarOrden(orden);
+                    lblGuia.setText(txtGuia.getText());
+                    for (int i = 0; i < idservselec.size(); i++) {
+                        procesoVo proc = new procesoVo();
+                        proc.setImagen_proceso("");
+                        proc.setObservaciones(String.valueOf(descrip.elementAt(i)));
+                        proc.setFecha_inicio(formato.format(sistemaFech));
+                        proc.setId_servicio(Integer.parseInt(String.valueOf(idservselec.elementAt(i))));
+                        proc.setId_orden(IdOrden());
+                        miCoordinador.agregarProceso(proc);
+                    }
+                    rSPanelsSlider2.slidPanel(registrofinalizado, RSPanelsSlider.direct.Right);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Ningun servicio agregado", "Informacion", JOptionPane.INFORMATION_MESSAGE);
                 }
-                rSPanelsSlider2.slidPanel(registrofinalizado, RSPanelsSlider.direct.Right);
             } else {
-                JOptionPane.showMessageDialog(null, "Ningun servicio seleccionado", "Informacion", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Ingrese un numero de guia", "Informacion", JOptionPane.INFORMATION_MESSAGE);
             }
         }
     }//GEN-LAST:event_btnfinalizarActionPerformed
@@ -1165,7 +1202,7 @@ public class Registro extends javax.swing.JInternalFrame {
             listarCliente();
         } else {
             listarClienteConNombre();
-
+            
         }
 
     }//GEN-LAST:event_btnBuscarClienteActionPerformed
@@ -1179,10 +1216,10 @@ public class Registro extends javax.swing.JInternalFrame {
         btnActivadorAuto.setEnabled(true);
         btnActivadorActualizar.setEnabled(true);
     }//GEN-LAST:event_listClienteMouseClicked
-
+    
 
     private void btnGuardarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarClienteActionPerformed
-
+        
         if (btnGuardarCliente.getText().equals("Guardar")) {
             clienteVo cliente = new clienteVo();
             cliente.setNombre(nombre.getText());
@@ -1192,7 +1229,7 @@ public class Registro extends javax.swing.JInternalFrame {
             cliente.setTelefono(telefono.getText());
             cliente.setCorreo(correo.getText());
             cliente.setId_trabajador(Integer.parseInt(Inicio.lblid.getText()));
-
+            
             if (nombre.getText().equals("") || colonia.getText().equals("") || calle.getText().equals("")
                     || num_casa.getText().equals("") || telefono.getText().equals("") || correo.getText().equals("")) {
                 JOptionPane.showMessageDialog(null, "Llene todos los campos");
@@ -1209,7 +1246,7 @@ public class Registro extends javax.swing.JInternalFrame {
                     || num_casa.getText().equals("") || telefono.getText().equals("") || correo.getText().equals("")) {
                 JOptionPane.showMessageDialog(null, "Llene todos los campos");
             } else {
-
+                
                 actualizado.setNombre(nombre.getText());
                 actualizado.setColonia(colonia.getText());
                 actualizado.setCalle(calle.getText());
@@ -1226,12 +1263,12 @@ public class Registro extends javax.swing.JInternalFrame {
                     enableComponents(panelCliente, false);
                     listarCliente();
                 }
-
+                
             }
-
+            
         }
     }//GEN-LAST:event_btnGuardarClienteActionPerformed
-
+    
     public void LimpiarPanelCliente() {
         nombre.setText(null);
         colonia.setText(null);
@@ -1240,14 +1277,14 @@ public class Registro extends javax.swing.JInternalFrame {
         telefono.setText(null);
         correo.setText(null);
     }
-
+    
     public void LimpiarPanelAuto() {
         placa.setText(null);
         color.setText(null);
         modelo.setText(null);
         marca.setText(null);
     }
-
+    
 
     private void btnActivadorRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActivadorRegistroActionPerformed
         enableComponents(panelCliente, true);
@@ -1266,7 +1303,7 @@ public class Registro extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btnActivadorAutoActionPerformed
 
     private void btnGuardarAutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarAutoActionPerformed
-
+        
         if (placa.getText().equals("") || modelo.getText().equals("") || marca.getText().equals("")
                 || color.getText().equals("")) {
             JOptionPane.showMessageDialog(null, "Llene todos los campos");
@@ -1283,7 +1320,7 @@ public class Registro extends javax.swing.JInternalFrame {
             LimpiarPanelAuto();
             listarAuto();
             enableComponents(panelAuto, false);
-
+            
         }
     }//GEN-LAST:event_btnGuardarAutoActionPerformed
 
@@ -1294,13 +1331,13 @@ public class Registro extends javax.swing.JInternalFrame {
     private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
         if (boxArea.getSelectedIndex() != -1) {
             if (listServicios.getSelectedIndex() != -1) {
-
+                
                 modelos.addElement(boxArea.getSelectedItem() + " " + listServicios.getSelectedValue());
                 descrip.addElement(txtdescripcion.getText());
                 idservselec.addElement(idserv.elementAt(listServicios.getSelectedIndex()));
                 listServiciosaRealizar.setModel(modelos);
                 txtdescripcion.setText("");
-
+                
             } else {
                 JOptionPane.showMessageDialog(null, "No ha seleccionado un servicio");
             }
@@ -1356,7 +1393,7 @@ public class Registro extends javax.swing.JInternalFrame {
             JOptionPane.showMessageDialog(null, "Seleccione un cliente");
         }
     }//GEN-LAST:event_btnActivadorActualizarActionPerformed
-
+    
     public void Datoscliente() {
         ArrayList<clienteVo> cliente = miCoordinador.buscarCliente(Integer.parseInt(String.valueOf(idcliente.elementAt(listCliente.getSelectedIndex()))));
         for (int i = 0; i < cliente.size(); i++) {
@@ -1416,7 +1453,7 @@ public class Registro extends javax.swing.JInternalFrame {
             evt.setKeyChar((char) evt.VK_CLEAR);
             getToolkit().beep();
         }
-
+        
         int k = (int) evt.getKeyChar();
         if (k < 48 || k > 57) {
             if (k != 8) {
@@ -1529,122 +1566,122 @@ public class Registro extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_colorKeyTyped
 
     private void btnBuscarClienteMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarClienteMouseMoved
-    btnBuscarCliente.setBackground(new java.awt.Color(206, 26, 31));
-    btnBuscarCliente.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    btnBuscarCliente.setForeground(new java.awt.Color(255, 255, 255));
+        btnBuscarCliente.setBackground(new java.awt.Color(206, 26, 31));
+        btnBuscarCliente.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnBuscarCliente.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_btnBuscarClienteMouseMoved
 
     private void btnBuscarClienteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarClienteMouseExited
-    btnBuscarCliente.setBackground(new java.awt.Color(237, 31, 36));
-    btnBuscarCliente.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    btnBuscarCliente.setForeground(new java.awt.Color(255, 255, 255));
+        btnBuscarCliente.setBackground(new java.awt.Color(237, 31, 36));
+        btnBuscarCliente.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnBuscarCliente.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_btnBuscarClienteMouseExited
 
     private void btnActivadorRegistroMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActivadorRegistroMouseMoved
-    btnActivadorRegistro.setBackground(new java.awt.Color(206, 26, 31));
-    btnActivadorRegistro.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    btnActivadorRegistro.setForeground(new java.awt.Color(255, 255, 255));
+        btnActivadorRegistro.setBackground(new java.awt.Color(206, 26, 31));
+        btnActivadorRegistro.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnActivadorRegistro.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_btnActivadorRegistroMouseMoved
 
     private void btnActivadorRegistroMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActivadorRegistroMouseExited
-    btnActivadorRegistro.setBackground(new java.awt.Color(237, 31, 36));
-    btnActivadorRegistro.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    btnActivadorRegistro.setForeground(new java.awt.Color(255, 255, 255));
+        btnActivadorRegistro.setBackground(new java.awt.Color(237, 31, 36));
+        btnActivadorRegistro.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnActivadorRegistro.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_btnActivadorRegistroMouseExited
 
     private void btnActivadorActualizarMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActivadorActualizarMouseMoved
-    btnActivadorActualizar.setBackground(new java.awt.Color(206, 26, 31));
-    btnActivadorActualizar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    btnActivadorActualizar.setForeground(new java.awt.Color(255, 255, 255));
+        btnActivadorActualizar.setBackground(new java.awt.Color(206, 26, 31));
+        btnActivadorActualizar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnActivadorActualizar.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_btnActivadorActualizarMouseMoved
 
     private void btnActivadorActualizarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActivadorActualizarMouseExited
-    btnActivadorActualizar.setBackground(new java.awt.Color(237, 31, 36));
-    btnActivadorActualizar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    btnActivadorActualizar.setForeground(new java.awt.Color(255, 255, 255));
+        btnActivadorActualizar.setBackground(new java.awt.Color(237, 31, 36));
+        btnActivadorActualizar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnActivadorActualizar.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_btnActivadorActualizarMouseExited
 
     private void btnActivadorAutoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActivadorAutoMouseMoved
-    btnActivadorAuto.setBackground(new java.awt.Color(206, 26, 31));
-    btnActivadorAuto.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    btnActivadorAuto.setForeground(new java.awt.Color(255, 255, 255));
+        btnActivadorAuto.setBackground(new java.awt.Color(206, 26, 31));
+        btnActivadorAuto.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnActivadorAuto.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_btnActivadorAutoMouseMoved
 
     private void btnActivadorAutoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActivadorAutoMouseExited
-    btnActivadorAuto.setBackground(new java.awt.Color(237, 31, 36));
-    btnActivadorAuto.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    btnActivadorAuto.setForeground(new java.awt.Color(255, 255, 255));
+        btnActivadorAuto.setBackground(new java.awt.Color(237, 31, 36));
+        btnActivadorAuto.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnActivadorAuto.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_btnActivadorAutoMouseExited
 
     private void btnGuardarClienteMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGuardarClienteMouseMoved
-    btnGuardarCliente.setBackground(new java.awt.Color(206, 26, 31));
-    btnGuardarCliente.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    btnGuardarCliente.setForeground(new java.awt.Color(255, 255, 255)); 
+        btnGuardarCliente.setBackground(new java.awt.Color(206, 26, 31));
+        btnGuardarCliente.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnGuardarCliente.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_btnGuardarClienteMouseMoved
 
     private void btnGuardarClienteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGuardarClienteMouseExited
-    btnGuardarCliente.setBackground(new java.awt.Color(237, 31, 36));
-    btnGuardarCliente.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    btnGuardarCliente.setForeground(new java.awt.Color(255, 255, 255));
+        btnGuardarCliente.setBackground(new java.awt.Color(237, 31, 36));
+        btnGuardarCliente.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnGuardarCliente.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_btnGuardarClienteMouseExited
 
     private void btnsiguienteMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnsiguienteMouseMoved
-    btnsiguiente.setBackground(new java.awt.Color(206, 26, 31));
-    btnsiguiente.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    btnsiguiente.setForeground(new java.awt.Color(255, 255, 255));
+        btnsiguiente.setBackground(new java.awt.Color(206, 26, 31));
+        btnsiguiente.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnsiguiente.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_btnsiguienteMouseMoved
 
     private void btnsiguienteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnsiguienteMouseExited
-    btnsiguiente.setBackground(new java.awt.Color(237, 31, 36));
-    btnsiguiente.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    btnsiguiente.setForeground(new java.awt.Color(255, 255, 255));
+        btnsiguiente.setBackground(new java.awt.Color(237, 31, 36));
+        btnsiguiente.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnsiguiente.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_btnsiguienteMouseExited
 
     private void btnGuardarAutoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGuardarAutoMouseMoved
-    btnGuardarAuto.setBackground(new java.awt.Color(206, 26, 31));
-    btnGuardarAuto.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    btnGuardarAuto.setForeground(new java.awt.Color(255, 255, 255));
+        btnGuardarAuto.setBackground(new java.awt.Color(206, 26, 31));
+        btnGuardarAuto.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnGuardarAuto.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_btnGuardarAutoMouseMoved
 
     private void btnGuardarAutoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGuardarAutoMouseExited
-    btnGuardarAuto.setBackground(new java.awt.Color(237, 31, 36));
-    btnGuardarAuto.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    btnGuardarAuto.setForeground(new java.awt.Color(255, 255, 255));
+        btnGuardarAuto.setBackground(new java.awt.Color(237, 31, 36));
+        btnGuardarAuto.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnGuardarAuto.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_btnGuardarAutoMouseExited
-
+    
     public void sendEmail(String Correo, String cliente) throws IOException {
-
+        
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.host", "mail.verifycar.com.mx");
         props.put("mail.smtp.port", "587");
-
+        
         Session session = Session.getInstance(props, new javax.mail.Authenticator() {
-
+            
             protected PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication("info@verifycar.com.mx", "Verifycar2018MX");
             }
         });
-
+        
         try {
-
+            
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress("info@verifycar.com.mx"));
             message.setRecipients(Message.RecipientType.TO,
                     InternetAddress.parse(Correo));
             message.setSubject("¡Hola " + cliente + "!");
-
+            
             Multipart multipart = new MimeMultipart();
-
+            
             InputStream inputStream = getClass().getResourceAsStream(
                     "index.html");
             BufferedReader bufferedReader = new BufferedReader(
                     new InputStreamReader(inputStream));
-
+            
             String strLine;
             StringBuffer msjHTML = new StringBuffer();
-
+            
             while ((strLine = bufferedReader.readLine()) != null) {
                 strLine = strLine.replace("$$Modelo", String.valueOf(datoscarro.elementAt(0)));
                 strLine = strLine.replace("$$Marca", String.valueOf(datoscarro.elementAt(2)));
@@ -1652,24 +1689,24 @@ public class Registro extends javax.swing.JInternalFrame {
                 strLine = strLine.replace("$$Guia", lblGuia.getText());
                 msjHTML.append(strLine);
             }
-            System.out.println(msjHTML.toString());
+            //System.out.println(msjHTML.toString());
             // String mensajeEnviar = msjHTML.toString();
             // mensajeEnviar = mensajeEnviar.replace("$$Modelo", String.valueOf(datoscarro.elementAt(0)));
 
             MimeBodyPart mimeBodyPart = new MimeBodyPart();
             mimeBodyPart.setContent(msjHTML.toString(), "text/html");
-
+            
             multipart.addBodyPart(mimeBodyPart);
             message.setContent(multipart);
-
+            
             Transport.send(message);
             JOptionPane.showMessageDialog(this, "Su mensaje ha sido enviado");
-
+            
         } catch (MessagingException e) {
             throw new RuntimeException(e);
         }
     }
-
+    
     public void listarAuto() {
         DefaultListModel modeloss = new DefaultListModel();
         idauto.removeAllElements();
@@ -1681,7 +1718,7 @@ public class Registro extends javax.swing.JInternalFrame {
         listAuto.setModel(modeloss);
         btnActivadorAuto.setEnabled(true);
     }
-
+    
     public void datosAuto() {
         datoscarro.removeAllElements();
         ArrayList<autoVo> auto = miCoordinador.buscarAutoID(Integer.parseInt(String.valueOf(idauto.elementAt(listAuto.getSelectedIndex()))));
@@ -1692,7 +1729,7 @@ public class Registro extends javax.swing.JInternalFrame {
             datoscarro.addElement(auto.get(i).getColor());
         }
     }
-
+    
     public void listarCliente() {
         idcliente.removeAllElements();
         DefaultListModel modeloss = new DefaultListModel();
@@ -1703,7 +1740,7 @@ public class Registro extends javax.swing.JInternalFrame {
         }
         listCliente.setModel(modeloss);
     }
-
+    
     public void listarClienteConNombre() {
         idcliente.removeAllElements();
         DefaultListModel modeloss = new DefaultListModel();
@@ -1714,9 +1751,9 @@ public class Registro extends javax.swing.JInternalFrame {
         }
         listCliente.setModel(modeloss);
     }
-
+    
     public Integer IdOrden() {
-
+        
         ordenVo ord = Coordinador.getIdOrden(lblGuia.getText());
         if (ord.getIdorden() != 0) {
             return ord.getIdorden();
@@ -1725,9 +1762,9 @@ public class Registro extends javax.swing.JInternalFrame {
         }
         return null;
     }
-
+    
     public String InicialesTaller() {
-
+        
         adminVo adm = Coordinador.getAdmin(Inicio.lblid.getText());
         if (adm.getNombre_empresa() != null) {
             String inic = "", palabra;
@@ -1743,7 +1780,7 @@ public class Registro extends javax.swing.JInternalFrame {
         }
         return null;
     }
-
+    
     public String numerodeOrden() {
         String cadena;
         cadena = InicialesTaller()
@@ -1755,20 +1792,20 @@ public class Registro extends javax.swing.JInternalFrame {
         lblGuia.setText(cadena);
         return cadena;
     }
-
+    
     public void listarArea() {
         ArrayList<areaVo> area = miCoordinador.listarArea();
         for (int i = 0; i < area.size(); i++) {
             boxArea.addItem(area.get(i).getNombre());
         }
     }
-
+    
     public void listarServicio() {
         idserv.removeAllElements();
         DefaultListModel modeloss = new DefaultListModel();
         int id = 1 + boxArea.getSelectedIndex();
         ArrayList<servicioVo> servicio = miCoordinador.buscarServicio(id);
-
+        
         for (int i = 0; i < servicio.size(); i++) {
             // modelo.addElement(i);
             modeloss.addElement(servicio.get(i).getNombre());
@@ -1777,13 +1814,13 @@ public class Registro extends javax.swing.JInternalFrame {
         listServicios.setModel(modeloss);
         //btnActivadorAuto.setEnabled(true);
     }
-
+    
     public void listarServicioNombre() {
         idserv.removeAllElements();
         DefaultListModel modeloss = new DefaultListModel();
         int id = 1 + boxArea.getSelectedIndex();
         ArrayList<servicioVo> servicio = miCoordinador.buscarServicioNombre(id, txtNombreServicio.getText());
-
+        
         for (int i = 0; i < servicio.size(); i++) {
             // modelo.addElement(i);
             modeloss.addElement(servicio.get(i).getNombre());
@@ -1792,7 +1829,7 @@ public class Registro extends javax.swing.JInternalFrame {
         listServicios.setModel(modeloss);
         //btnActivadorAuto.setEnabled(true);
     }
-
+    
     public void enableComponents(Container container, boolean enable) {
         Component[] components = container.getComponents();
         for (Component component : components) {
@@ -1836,6 +1873,7 @@ public class Registro extends javax.swing.JInternalFrame {
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
@@ -1866,6 +1904,7 @@ public class Registro extends javax.swing.JInternalFrame {
     private javax.swing.JPanel registrofinalizado;
     private javax.swing.JPanel registroservicio;
     private rojerusan.RSMetroTextFullPlaceHolder telefono;
+    private rojerusan.RSMetroTextFullPlaceHolder txtGuia;
     private rojerusan.RSMetroTextFullPlaceHolder txtNombreCliente;
     private javax.swing.JTextField txtNombreServicio;
     private javax.swing.JTextArea txtdescripcion;
