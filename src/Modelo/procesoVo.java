@@ -13,6 +13,16 @@ public class procesoVo {
     private int id_orden;
     private int idauto;
     private String nom_servicio;
+    private int id_trabajador;
+
+    public int getId_trabajador() {
+        return id_trabajador;
+    }
+
+    public void setId_trabajador(int id_trabajador) {
+        this.id_trabajador = id_trabajador;
+    }
+    
 
     public String getNom_servicio() {
         return nom_servicio;

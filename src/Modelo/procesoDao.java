@@ -111,8 +111,8 @@ public class procesoDao {
 
         try {
             String query = "insert into proceso (status, observaciones, fechainicio, "
-                    + "id_servicio, id_orden, imagen_proceso)"
-                    + " values (?, ?, ?, ?, ?, ?)";
+                    + "id_servicio, id_orden, imagen_proceso, id_trabajador)"
+                    + " values (?, ?, ?, ?, ?, ?, ?)";
 
             PreparedStatement preparedStatement = conex.getConn().prepareStatement(query);
             preparedStatement.setString(1, "procesando");
@@ -121,6 +121,7 @@ public class procesoDao {
             preparedStatement.setInt(4, proceso.getId_servicio());
             preparedStatement.setInt(5, proceso.getId_orden());
             preparedStatement.setString(6, proceso.getImagen_proceso());
+            preparedStatement.setInt(7, proceso.getId_trabajador());
             preparedStatement.execute();
 
             conex.getConn().close();

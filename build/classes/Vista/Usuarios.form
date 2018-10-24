@@ -275,9 +275,6 @@
                   <SubComponents>
                     <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="txtTrabajo">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="37" green="33" red="33" type="rgb"/>
                         </Property>
@@ -301,9 +298,6 @@
                     </Component>
                     <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="txtPaterno">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="37" green="33" red="33" type="rgb"/>
                         </Property>
@@ -327,9 +321,6 @@
                     </Component>
                     <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="txtMaterno">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="37" green="33" red="33" type="rgb"/>
                         </Property>
@@ -353,9 +344,6 @@
                     </Component>
                     <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="txtNombre3">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="37" green="33" red="33" type="rgb"/>
                         </Property>
@@ -379,9 +367,6 @@
                     </Component>
                     <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="txtEdad">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="37" green="33" red="33" type="rgb"/>
                         </Property>
@@ -405,9 +390,6 @@
                     </Component>
                     <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="txtPass">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="37" green="33" red="33" type="rgb"/>
                         </Property>
@@ -695,9 +677,6 @@
                   <SubComponents>
                     <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="txtTrabajo2">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="37" green="33" red="33" type="rgb"/>
                         </Property>
@@ -721,9 +700,6 @@
                     </Component>
                     <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="txtPaterno2">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="37" green="33" red="33" type="rgb"/>
                         </Property>
@@ -747,9 +723,6 @@
                     </Component>
                     <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="txtMaterno2">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="37" green="33" red="33" type="rgb"/>
                         </Property>
@@ -773,9 +746,6 @@
                     </Component>
                     <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="txtNombre2">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="37" green="33" red="33" type="rgb"/>
                         </Property>
@@ -799,9 +769,6 @@
                     </Component>
                     <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="txtEdad2">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="37" green="33" red="33" type="rgb"/>
                         </Property>
@@ -862,9 +829,6 @@
                     </Component>
                     <Component class="rojerusan.RSPasswordTextPlaceHolder" name="txtPass2">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.CompoundBorderInfo">
                             <CompoundBorder>
@@ -955,9 +919,6 @@
                   <SubComponents>
                     <Component class="rojerusan.RSTableMetro" name="tbTrabajo">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="2d" green="2c" red="2c" type="rgb"/>
                         </Property>

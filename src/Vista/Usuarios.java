@@ -60,10 +60,10 @@ public class Usuarios extends javax.swing.JInternalFrame {
         txtTrabajo.setText("");
         txtPass.setText("");
     }
-
+ArrayList<trabajadorVo> p ;
     public void llenarTablaTrabajadores() {
         modelo.setColumnIdentifiers(columnas);
-        ArrayList<trabajadorVo> p = Coordinador.getTrabajadores(idadmin);
+         p = Coordinador.getTrabajadores(idadmin);
         //Ciclo para llenar tabla de productos
         for (int i = 0; i < p.size(); i++) {
 
@@ -837,7 +837,7 @@ public class Usuarios extends javax.swing.JInternalFrame {
             vo.setAmaterno(txtMaterno.getText());
             vo.setEdad(Integer.parseInt(txtEdad.getText()));
             vo.setTipo_trabajo(txtTrabajo.getText());
-            vo.setId_admin(1);
+            vo.setId_admin(idadmin);
             vo.setPassword(txtPass.getText());
 
             miCoordinador.addTrabajador(vo);

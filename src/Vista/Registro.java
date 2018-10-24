@@ -48,6 +48,7 @@ public class Registro extends javax.swing.JInternalFrame {
     Vector descrip = new Vector(20);
     Vector idserv = new Vector(20);
     Vector idservselec = new Vector(20);
+    Vector idtraba = new Vector(20);
     Vector idauto = new Vector(20);
     Vector idcliente = new Vector(20);
     String nombretaller;
@@ -1188,6 +1189,7 @@ public class Registro extends javax.swing.JInternalFrame {
             descrip.removeAllElements();
             idserv.removeAllElements();
             idservselec.removeAllElements();
+            idtraba.removeAllElements();
             modelos.removeAllElements();
             listServicios.setModel(modelos);
             listServiciosaRealizar.setModel(modelos);
@@ -1215,6 +1217,7 @@ public class Registro extends javax.swing.JInternalFrame {
                         proc.setFecha_inicio(formato.format(sistemaFech));
                         proc.setId_servicio(Integer.parseInt(String.valueOf(idservselec.elementAt(i))));
                         proc.setId_orden(IdOrden());
+                        proc.setId_trabajador(Integer.parseInt(String.valueOf(idtraba.elementAt(i)))); 
                         miCoordinador.agregarProceso(proc);
                     }
                     rSPanelsSlider2.slidPanel(registrofinalizado, RSPanelsSlider.direct.Right);
@@ -1365,11 +1368,12 @@ public class Registro extends javax.swing.JInternalFrame {
 
     private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
         if (boxArea.getSelectedIndex() != -1) {
-            if (listServicios.getSelectedIndex() != -1) {
+            if (listServicios.getSelectedIndex() != -1 || boxEncargado.getSelectedIndex() != -1) {
                 
                 modelos.addElement(boxArea.getSelectedItem() + " " + listServicios.getSelectedValue());
                 descrip.addElement(txtdescripcion.getText());
                 idservselec.addElement(idserv.elementAt(listServicios.getSelectedIndex()));
+                idtraba.addElement(trabajadores.get(boxEncargado.getSelectedIndex()).getIdtrabajador());
                 listServiciosaRealizar.setModel(modelos);
                 txtdescripcion.setText("");
                 
@@ -1392,6 +1396,7 @@ public class Registro extends javax.swing.JInternalFrame {
             descrip.remove(listServiciosaRealizar.getSelectedIndex());
             idservselec.remove(listServiciosaRealizar.getSelectedIndex());
             modelos.remove(listServiciosaRealizar.getSelectedIndex());
+            idtraba.remove(listServiciosaRealizar.getSelectedIndex());
             listServiciosaRealizar.setModel(modelos);
             txtverdescripcion.setText(null);
         } else {
@@ -1838,10 +1843,10 @@ public class Registro extends javax.swing.JInternalFrame {
             boxArea.addItem(area.get(i).getNombre());
         }
     }
-    
+    ArrayList <trabajadorVo> trabajadores;
     public void listarEmpleados(){
     boxEncargado.removeAllItems();
-        ArrayList <trabajadorVo> trabajadores = miCoordinador.getTrabajadores(idadmin);
+        trabajadores = miCoordinador.getTrabajadores(idadmin);
     for (int i = 0; i < trabajadores.size(); i++) {
             boxEncargado.addItem(trabajadores.get(i).getNombre() + " " + trabajadores.get(i).getApaterno());
         }
