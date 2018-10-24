@@ -360,7 +360,7 @@ if (!this.btnhistorial.isSelected()) {
         if (estacerrado(h)) {
             try {
                 h = new Historial();
-
+                h.idadmin = Integer.parseInt(lbAdmin.getText());
                 // us.setCoordinador(miCoordinador);
                 escritorio.add(h);//.setLocation(100, 0);
                 h.setMaximum(true);

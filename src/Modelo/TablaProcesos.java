@@ -11,17 +11,17 @@ import javax.swing.table.DefaultTableModel;
 public class TablaProcesos {
 
     private Coordinador miCoordinador;
-    private boolean[] editable = {false, false, false, false, true, false, false};
+    private boolean[] editable = {false, false, false, false, true, false, false, false};
 
     public void visualizar(JTable tabla, String orden) {
 
         tabla.setDefaultRenderer(Object.class, new Render());
 
-        DefaultTableModel dt = new DefaultTableModel(new String[]{"ID Proceso", "Area", "Proceso","Observaciones",  "Status", "Imagen", "Cargar"}, 0) {
+        DefaultTableModel dt = new DefaultTableModel(new String[]{"ID Proceso", "Area", "Proceso","Observaciones",  "Status", "Imagen", "Cargar","Encargado"}, 0) {
 
             Class[] types = new Class[]{
-                java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Object.class
-            };
+                java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Object.class,
+            java.lang.Object.class  };
 
             public Class getColumnClass(int columnIndex) {
                 return types[columnIndex];
@@ -41,7 +41,7 @@ public class TablaProcesos {
         Object datos[] = new Object[proceso.size()];
         if (proceso.size() > 0) {
             for (int i = 0; i < proceso.size(); i++) {
-                Object fila[] = new Object[7];
+                Object fila[] = new Object[8];
 
                 fila[0] = proceso.get(i).getIdproceso();
                 fila[1] = proceso.get(i).getNom_area();
@@ -63,6 +63,8 @@ public class TablaProcesos {
                 }
 
                 fila[6] = btn_visualizar;
+                
+                fila[7] = proceso.get(i).getNom_trabajador() + " " + proceso.get(i).getApp_trabajador();
 
                 dt.addRow(fila);
 
@@ -80,6 +82,15 @@ public class TablaProcesos {
         tabla.getColumnModel().getColumn(3).setMinWidth(0);
         tabla.getColumnModel().getColumn(3).setPreferredWidth(0);
         tabla.getColumnModel().getColumn(3).setResizable(false);
-
+        
+        tabla.getColumnModel().getColumn(4).setMaxWidth(70);
+        tabla.getColumnModel().getColumn(4).setMinWidth(80);
+        tabla.getColumnModel().getColumn(4).setPreferredWidth(70);
+        tabla.getColumnModel().getColumn(4).setResizable(false);
+        
+        tabla.getColumnModel().getColumn(5).setMaxWidth(70);
+        tabla.getColumnModel().getColumn(5).setMinWidth(80);
+        tabla.getColumnModel().getColumn(5).setPreferredWidth(70);
+        tabla.getColumnModel().getColumn(5).setResizable(false);
     }
 }

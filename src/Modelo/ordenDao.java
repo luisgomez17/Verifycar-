@@ -84,7 +84,7 @@ public class ordenDao {
         return or;
     }
 
-    public ArrayList<ordenVo> getHistorial(String fecha1, String fecha2) {
+    public ArrayList<ordenVo> getHistorial(String fecha1, String fecha2,int idadmin) {
         Conectarse conn = new Conectarse();
         ArrayList<ordenVo> historial = new ArrayList<>();
         try {
@@ -94,10 +94,14 @@ public class ordenDao {
                     + " JOIN orden as ord on ord.idorden = pr.id_orden "
                     + " JOIN cliente as cl on cl.idcliente = ord.id_cliente "
                     + " JOIN auto as au on au.idauto = ord.id_auto "
-                    + " WHERE pr.fechainicio BETWEEN ? AND ?");
+                    + "JOIN trabajador as tr on tr.idtrabajador = cl.id_trabajador " +
+                    "JOIN admin as ad on ad.idadmin = tr.id_admin"
+                    + " WHERE pr.fechainicio BETWEEN ? AND ?"
+                    + "  AND ad.idadmin = ? ");
 
             preparedStatement.setString(1, fecha1);
             preparedStatement.setString(2, fecha2);
+            preparedStatement.setInt(3, idadmin);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 ordenVo or = new ordenVo();

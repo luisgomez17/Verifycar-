@@ -14,6 +14,25 @@ public class procesoVo {
     private int idauto;
     private String nom_servicio;
     private int id_trabajador;
+    private String nom_trabajador;
+    private String app_trabajador;
+
+    public String getNom_trabajador() {
+        return nom_trabajador;
+    }
+
+    public void setNom_trabajador(String nom_trabajador) {
+        this.nom_trabajador = nom_trabajador;
+    }
+
+    public String getApp_trabajador() {
+        return app_trabajador;
+    }
+
+    public void setApp_trabajador(String app_trabajador) {
+        this.app_trabajador = app_trabajador;
+    }
+    
 
     public int getId_trabajador() {
         return id_trabajador;

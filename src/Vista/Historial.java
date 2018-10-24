@@ -31,7 +31,7 @@ import net.sf.jasperreports.view.JasperViewer;
 public class Historial extends javax.swing.JInternalFrame {
 
     private Coordinador miCoordinador;
-
+    public int idadmin;
     private File src1File;
     public int idusuario;
     public Historial act;
@@ -62,7 +62,7 @@ DefaultTableModel modelo = new DefaultTableModel() {
     public void tablaHistorial(String fecha1, String fecha2){
         limpiarTabla();
         modelo.setColumnIdentifiers(columnas);
-        ArrayList<ordenVo> h = Coordinador.getHistorial(fecha1, fecha2);
+        ArrayList<ordenVo> h = Coordinador.getHistorial(fecha1, fecha2, idadmin);
         
         if(h.size()>0){
         for (int i = 0; i < h.size(); i++) {

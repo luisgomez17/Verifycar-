@@ -14,11 +14,12 @@ public class procesoDao {
 
         try {
             PreparedStatement preparedStatement = conn.getConn().prepareStatement(
-                    "SELECT pr.idproceso, pr.status, pr.observaciones, pr.fechainicio, pr.imagen_proceso , ser.nombre, ar.nombrearea"
+                    "SELECT pr.idproceso, pr.status, pr.observaciones, pr.fechainicio, pr.imagen_proceso , ser.nombre, ar.nombrearea, tr.idtrabajador, tr.nombres_tra, tr.apellidop_tra"
                     + " FROM proceso as pr"
                     + " JOIN orden as o on o.idorden = pr.id_orden"
                     + " JOIN servicio as ser on ser.idservicio = pr.id_servicio"
                     + " JOIN area as ar on ar.idarea = ser.id_area"
+                    + " JOIN trabajador as tr on tr.idtrabajador = pr.id_trabajador"
                     + " WHERE o.numorden = ?");
 
             preparedStatement.setString(1, orden);
@@ -35,6 +36,9 @@ public class procesoDao {
                 pro.setImagen_proceso(resultSet.getString(5));
                 pro.setNom_servicio(resultSet.getString(6));
                 pro.setNom_area(resultSet.getString(7));
+                pro.setId_trabajador(resultSet.getInt(8));
+                pro.setNom_trabajador(resultSet.getString(9));
+                pro.setApp_trabajador(resultSet.getString(10));
 
                 procesos.add(pro);
 
