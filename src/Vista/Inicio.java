@@ -319,7 +319,7 @@ public class Inicio extends javax.swing.JFrame {
         if (estacerrado(us)) {
             try {
                 us = new Usuarios();
-
+                us.idadmin = Integer.parseInt(lbAdmin.getText());
                 // us.setCoordinador(miCoordinador);
                 escritorio.add(us);//.setLocation(100, 0);
                 us.setMaximum(true);

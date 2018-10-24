@@ -34,15 +34,17 @@ public class trabajadorDao {
         }
     }
     
-    public ArrayList<trabajadorVo> getTrabajadores(){
+    public ArrayList<trabajadorVo> getTrabajadores(int id){
         Conectarse conn = new Conectarse();
         ArrayList<trabajadorVo> trabajadores = new ArrayList<>();
         
             try {
             PreparedStatement preparedStatement = conn.getConn().prepareStatement(
             "select idtrabajador, nombres_tra, apellidop_tra, apellidom_tra, edadt, tipo_trabajo "
-            + "FROM trabajador");
+            + "FROM trabajador "
+            + "WHERE id_admin = ?");
 
+            preparedStatement.setInt(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
 
             //Muestra resultados de la consulta SQL

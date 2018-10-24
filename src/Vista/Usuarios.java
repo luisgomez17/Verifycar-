@@ -33,15 +33,17 @@ public class Usuarios extends javax.swing.JInternalFrame {
 
     String[] columnas = {"ID", "Nombre", "Apellido Paterno", "Apellido Materno", "Edad", "Tipo de trabajo"};
     Tipografia tipoFuente;
+    
+    public int idadmin;
     public Usuarios() {
         initComponents();
         this.llenarTablaTrabajadores();
-       this.llenarTablaTrabajo();
+        this.llenarTablaTrabajo();
         tipoFuente = new Tipografia();
         //cuerpo = new Fuentes();
-        jLabel3.setFont(tipoFuente.fuente(tipoFuente.PTD,2, 30));
-        jLabel2.setFont(tipoFuente.fuente(tipoFuente.PTD,2, 30));
-        jLabel1.setFont(tipoFuente.fuente(tipoFuente.PTD,2, 30));
+        jLabel3.setFont(tipoFuente.fuente(tipoFuente.PTD, 2, 30));
+        jLabel2.setFont(tipoFuente.fuente(tipoFuente.PTD, 2, 30));
+        jLabel1.setFont(tipoFuente.fuente(tipoFuente.PTD, 2, 30));
     }
 
     public void setCoordinador(Coordinador miCoordinador) {
@@ -61,7 +63,7 @@ public class Usuarios extends javax.swing.JInternalFrame {
 
     public void llenarTablaTrabajadores() {
         modelo.setColumnIdentifiers(columnas);
-        ArrayList<trabajadorVo> p = Coordinador.getTrabajadores();
+        ArrayList<trabajadorVo> p = Coordinador.getTrabajadores(idadmin);
         //Ciclo para llenar tabla de productos
         for (int i = 0; i < p.size(); i++) {
 
@@ -74,7 +76,7 @@ public class Usuarios extends javax.swing.JInternalFrame {
 
     public void llenarTablaTrabajo() {
         modelo2.setColumnIdentifiers(columnas);
-        ArrayList<trabajadorVo> p = Coordinador.getTrabajadores();
+        ArrayList<trabajadorVo> p = Coordinador.getTrabajadores(idadmin);
         //Ciclo para llenar tabla de productos
         for (int i = 0; i < p.size(); i++) {
 
@@ -929,51 +931,51 @@ public class Usuarios extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btnActuaActionPerformed
 
     private void jButton1MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseMoved
-    jButton1.setBackground(new java.awt.Color(206, 26, 31));
-    jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setBackground(new java.awt.Color(206, 26, 31));
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_jButton1MouseMoved
 
     private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
-    jButton1.setBackground(new java.awt.Color(237, 31, 36));
-    jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setBackground(new java.awt.Color(237, 31, 36));
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_jButton1MouseExited
 
     private void btnActualizarMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActualizarMouseMoved
-    btnActualizar.setBackground(new java.awt.Color(206, 26, 31));
-    btnActualizar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    btnActualizar.setForeground(new java.awt.Color(255, 255, 255));
+        btnActualizar.setBackground(new java.awt.Color(206, 26, 31));
+        btnActualizar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnActualizar.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_btnActualizarMouseMoved
 
     private void btnActualizarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActualizarMouseExited
-    btnActualizar.setBackground(new java.awt.Color(237, 31, 36));
-    btnActualizar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    btnActualizar.setForeground(new java.awt.Color(255, 255, 255));
+        btnActualizar.setBackground(new java.awt.Color(237, 31, 36));
+        btnActualizar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnActualizar.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_btnActualizarMouseExited
 
     private void btnBorrarMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBorrarMouseMoved
-    btnBorrar.setBackground(new java.awt.Color(206, 26, 31));
-    btnBorrar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    btnBorrar.setForeground(new java.awt.Color(255, 255, 255));
+        btnBorrar.setBackground(new java.awt.Color(206, 26, 31));
+        btnBorrar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnBorrar.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_btnBorrarMouseMoved
 
     private void btnBorrarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBorrarMouseExited
-    btnBorrar.setBackground(new java.awt.Color(237, 31, 36));
-    btnBorrar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    btnBorrar.setForeground(new java.awt.Color(255, 255, 255));
+        btnBorrar.setBackground(new java.awt.Color(237, 31, 36));
+        btnBorrar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnBorrar.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_btnBorrarMouseExited
 
     private void btnActuaMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActuaMouseMoved
-    btnActua.setBackground(new java.awt.Color(206, 26, 31));
-    btnActua.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    btnActua.setForeground(new java.awt.Color(255, 255, 255));
+        btnActua.setBackground(new java.awt.Color(206, 26, 31));
+        btnActua.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnActua.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_btnActuaMouseMoved
 
     private void btnActuaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActuaMouseExited
-    btnActua.setBackground(new java.awt.Color(237, 31, 36));
-    btnActua.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-    btnActua.setForeground(new java.awt.Color(255, 255, 255));
+        btnActua.setBackground(new java.awt.Color(237, 31, 36));
+        btnActua.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnActua.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_btnActuaMouseExited
 
 

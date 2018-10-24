@@ -140,9 +140,9 @@ public class Coordinador {
         tra.addTrabajador(tv);
     }
 
-    public static ArrayList<trabajadorVo> getTrabajadores() {
+    public static ArrayList<trabajadorVo> getTrabajadores(int id) {
         trabajadorDao traba = new trabajadorDao();
-        return traba.getTrabajadores();
+        return traba.getTrabajadores(id);
     }
 
     public static trabajadorVo getTrabajadorID(int id) {

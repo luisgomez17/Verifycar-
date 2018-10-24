@@ -9,6 +9,7 @@ import Modelo.clienteVo;
 import Modelo.ordenVo;
 import Modelo.procesoVo;
 import Modelo.servicioVo;
+import Modelo.trabajadorVo;
 import java.awt.Component;
 import java.awt.Container;
 import java.io.BufferedReader;
@@ -125,6 +126,9 @@ public class Registro extends javax.swing.JInternalFrame {
         jPanel7 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtdescripcion = new javax.swing.JTextArea();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        boxEncargado = new rojerusan.RSComboMetro();
         jPanel12 = new javax.swing.JPanel();
         jScrollPane5 = new javax.swing.JScrollPane();
         listServiciosaRealizar = new javax.swing.JList<>();
@@ -828,24 +832,53 @@ public class Registro extends javax.swing.JInternalFrame {
         txtdescripcion.setRows(5);
         jScrollPane1.setViewportView(txtdescripcion);
 
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel7.setText("OBSERVACIONES");
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel8.setText("ENCARGADO:");
+
+        boxEncargado.setForeground(new java.awt.Color(0, 0, 0));
+        boxEncargado.setAutoscrolls(true);
+        boxEncargado.setColorArrow(new java.awt.Color(44, 44, 45));
+        boxEncargado.setColorBorde(new java.awt.Color(44, 44, 45));
+        boxEncargado.setColorFondo(new java.awt.Color(240, 240, 240));
+        boxEncargado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                boxEncargadoActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1)
+                    .addComponent(boxEncargado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel8))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jLabel7)
+                .addGap(11, 11, 11)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(boxEncargado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel12.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Servicios a Realizar", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
+        jPanel12.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "SERVICIOS A REALIZAR", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
 
         listServiciosaRealizar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -938,13 +971,13 @@ public class Registro extends javax.swing.JInternalFrame {
                 .addContainerGap(18, Short.MAX_VALUE))
         );
 
-        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Numero de guia", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "NUMERO DE ORDEN", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
 
         txtGuia.setForeground(new java.awt.Color(0, 0, 0));
         txtGuia.setBorderColor(new java.awt.Color(0, 0, 0));
         txtGuia.setBotonColor(new java.awt.Color(0, 0, 0));
         txtGuia.setPhColor(new java.awt.Color(153, 153, 153));
-        txtGuia.setPlaceholder("Ingrese numero de guia");
+        txtGuia.setPlaceholder("Ingrese numero de Orden");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -960,7 +993,7 @@ public class Registro extends javax.swing.JInternalFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(44, 44, 44)
                 .addComponent(txtGuia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(57, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout registroservicioLayout = new javax.swing.GroupLayout(registroservicio);
@@ -976,11 +1009,11 @@ public class Registro extends javax.swing.JInternalFrame {
                             .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jPanel7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(100, 100, 100)
+                        .addGap(109, 109, 109)
                         .addGroup(registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addContainerGap(470, Short.MAX_VALUE))
+                        .addContainerGap(461, Short.MAX_VALUE))
                     .addGroup(registroservicioLayout.createSequentialGroup()
                         .addComponent(btnatras)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -992,18 +1025,19 @@ public class Registro extends javax.swing.JInternalFrame {
             .addGroup(registroservicioLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(registroservicioLayout.createSequentialGroup()
+                        .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(registroservicioLayout.createSequentialGroup()
                         .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addGroup(registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnatras)
                     .addComponent(btnfinalizar))
@@ -1018,7 +1052,7 @@ public class Registro extends javax.swing.JInternalFrame {
         jLabel2.setText("REGISTRO REALIZADO");
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel3.setText("Numero de Guia:");
+        jLabel3.setText("Numero de Orden:");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel4.setText("Enviar por Correo");
@@ -1138,6 +1172,7 @@ public class Registro extends javax.swing.JInternalFrame {
                 if (!this.btnsiguiente.isSelected()) {
                     rSPanelsSlider2.slidPanel(registroservicio, RSPanelsSlider.direct.Right);
                     listarArea();
+                    listarEmpleados();
                 }
             } else {
                 JOptionPane.showMessageDialog(null, "Seleccione un Automovil");
@@ -1187,7 +1222,7 @@ public class Registro extends javax.swing.JInternalFrame {
                     JOptionPane.showMessageDialog(null, "Ningun servicio agregado", "Informacion", JOptionPane.INFORMATION_MESSAGE);
                 }
             } else {
-                JOptionPane.showMessageDialog(null, "Ingrese un numero de guia", "Informacion", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Ingrese un numero de Orden", "Informacion", JOptionPane.INFORMATION_MESSAGE);
             }
         }
     }//GEN-LAST:event_btnfinalizarActionPerformed
@@ -1648,6 +1683,10 @@ public class Registro extends javax.swing.JInternalFrame {
         btnGuardarAuto.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnGuardarAuto.setForeground(new java.awt.Color(255, 255, 255));
     }//GEN-LAST:event_btnGuardarAutoMouseExited
+
+    private void boxEncargadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boxEncargadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_boxEncargadoActionPerformed
     
     public void sendEmail(String Correo, String cliente) throws IOException {
         
@@ -1800,6 +1839,15 @@ public class Registro extends javax.swing.JInternalFrame {
         }
     }
     
+    public void listarEmpleados(){
+    boxEncargado.removeAllItems();
+        ArrayList <trabajadorVo> trabajadores = miCoordinador.getTrabajadores(idadmin);
+    for (int i = 0; i < trabajadores.size(); i++) {
+            boxEncargado.addItem(trabajadores.get(i).getNombre() + " " + trabajadores.get(i).getApaterno());
+        }
+    
+    }
+    
     public void listarServicio() {
         idserv.removeAllElements();
         DefaultListModel modeloss = new DefaultListModel();
@@ -1843,6 +1891,7 @@ public class Registro extends javax.swing.JInternalFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton EnviarCorreo;
     private rojerusan.RSComboMetro boxArea;
+    private rojerusan.RSComboMetro boxEncargado;
     private javax.swing.JButton btnActivadorActualizar;
     private javax.swing.JButton btnActivadorAuto;
     private javax.swing.JButton btnActivadorRegistro;
@@ -1866,6 +1915,8 @@ public class Registro extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
