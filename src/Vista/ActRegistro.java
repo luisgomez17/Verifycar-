@@ -494,12 +494,22 @@ public class ActRegistro extends javax.swing.JInternalFrame {
                             src1Name = fileName;
 
                             this.setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
-
+                            String proces = (String) tbProcesos.getValueAt(fila, 2);
+                            System.out.println("Pro:"+""+proces);
+                            
+                            if(!proces.equals("Cotizacion") ){
                             FTPUploader ftpUploader = new FTPUploader("www.verifycar.com.mx", "talleres@verifycar.com.mx", "pruebataller", src1File.getPath(), proceso + orden + ".jpg", "/img/procesos/");
                             pro.setIdproceso(valor);
                             pro.setImagen_proceso(proceso + orden + ".jpg");
                             Coordinador.updateImagenProceso(pro);
-
+                            }
+                            
+                            else if(proces.equals( "Cotizacion")){
+                            FTPUploader ftpUploader = new FTPUploader("www.verifycar.com.mx", "talleres@verifycar.com.mx", "pruebataller", src1File.getPath(), proceso + orden + ".pdf", "/img/procesos/");
+                            pro.setIdproceso(valor);
+                            pro.setImagen_proceso(proceso + orden + ".pdf");
+                            Coordinador.updateImagenProceso(pro);
+                            }
                             this.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
                             t.visualizar(tbProcesos, (lbOrden.getText().trim()));
