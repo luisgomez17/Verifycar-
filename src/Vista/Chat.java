@@ -12,6 +12,7 @@ import com.sun.awt.AWTUtilities;
 import static com.sun.java.accessibility.util.AWTEventMonitor.addWindowListener;
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Frame;
 import java.awt.GridLayout;
 import java.awt.event.WindowAdapter;
@@ -228,15 +229,20 @@ comentario.setText("");
     public void cargarMensaje(String usuario, String texto, String fecha){
         
 
-        JTextArea label = new JTextArea(usuario+"\n"+fecha+" "+texto);
+        JTextArea label = new JTextArea(usuario+"\n"+fecha+"\n"+texto);
         
         label.setLineWrap(true);        
         label.setEditable(false);
         label.setWrapStyleWord(true);
-        System.setProperty("myColor", "0XF7423F");
+        System.setProperty("myColor", "0XF0464A");
         Color myColor = Color.getColor("myColor"); 
+        Font font = new Font("Tahoma", Font.BOLD, 14);
          LineBorder line = new LineBorder(myColor, 2, true); // color, thickness, rounded
     label.setBorder(line);
+    label.setBackground(myColor);
+    label.setForeground(Color.WHITE);
+    label.setFont(font);
+    
     //add(label, BorderLayout.CENTER);
         
     scroll = new JScrollPane();        
