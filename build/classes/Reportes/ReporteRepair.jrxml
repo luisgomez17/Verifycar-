@@ -7,13 +7,15 @@
 		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
 	</parameter>
 	<queryString>
-		<![CDATA[SELECT ar.nombrearea,ser.nombre,CAST(pr.fechainicio as Date), cl.nombre_cliente, au.modelo, au.modelo, au.placa, au.marca, au.color
+		<![CDATA[SELECT ar.nombrearea,ser.nombre,CAST(pr.fechainicio as Date), cl.nombre_cliente, au.modelo, au.modelo, au.placa, au.marca, au.color, tr.nombres_tra, tr.apellidop_tra
  FROM proceso as pr 
 JOIN orden as ord on ord.idorden = pr.id_orden
  JOIN cliente as cl on cl.idcliente = ord.id_cliente
  JOIN auto as au on au.idauto = ord.id_auto
  JOIN servicio as ser on ser.idservicio = pr.id_servicio
  JOIN area as ar on ar.idarea = ser.id_area
+JOIN trabajador as tr on tr.idtrabajador = cl.id_trabajador
+JOIN admin as ad on ad.idadmin = tr.id_admin
  WHERE ord.numorden = $P{orden}]]>
 	</queryString>
 	<field name="nombrearea" class="java.lang.String">
@@ -36,6 +38,12 @@ JOIN orden as ord on ord.idorden = pr.id_orden
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="color" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombres_tra" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="apellidop_tra" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<background>
@@ -130,44 +138,55 @@ JOIN orden as ord on ord.idorden = pr.id_orden
 	<columnHeader>
 		<band height="22" splitType="Stretch">
 			<rectangle>
-				<reportElement x="69" y="0" width="441" height="20" backcolor="#F8BD31" uuid="5feca8a6-93a1-486c-97c9-115580cbfc17"/>
+				<reportElement x="69" y="0" width="468" height="20" backcolor="#F8BD31" uuid="5feca8a6-93a1-486c-97c9-115580cbfc17"/>
 			</rectangle>
 			<staticText>
-				<reportElement x="69" y="2" width="92" height="20" forecolor="#6C6165" uuid="24d509f4-2b6c-4e55-b0a1-e0d4df5c7bd7"/>
+				<reportElement x="69" y="2" width="109" height="20" forecolor="#6C6165" uuid="24d509f4-2b6c-4e55-b0a1-e0d4df5c7bd7"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Área]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="201" y="2" width="197" height="20" forecolor="#6C6165" uuid="2fbfcf52-6e0f-4ff1-9b4e-719d8deadf72"/>
+				<reportElement x="179" y="2" width="175" height="20" forecolor="#6C6165" uuid="2fbfcf52-6e0f-4ff1-9b4e-719d8deadf72"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Servicio]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="398" y="2" width="107" height="20" forecolor="#6C6165" uuid="c6a6698b-9619-42a9-8eb8-cc8ec951746b"/>
+				<reportElement x="354" y="0" width="80" height="20" forecolor="#6C6165" uuid="c6a6698b-9619-42a9-8eb8-cc8ec951746b"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Fecha]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="457" y="0" width="80" height="20" forecolor="#6C6165" uuid="3c8bc130-707e-40a2-bfe6-9182f844988c"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Encargado]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
 	<detail>
 		<band height="35" splitType="Stretch">
 			<textField>
-				<reportElement x="69" y="0" width="132" height="20" uuid="126b1d64-e37d-4ec4-949f-14afb4df9109"/>
+				<reportElement x="69" y="0" width="110" height="20" uuid="126b1d64-e37d-4ec4-949f-14afb4df9109"/>
 				<textFieldExpression><![CDATA[$F{nombrearea}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="201" y="1" width="197" height="20" uuid="7b527b81-4d92-4597-9664-6fb12a246dfb"/>
+				<reportElement x="179" y="0" width="175" height="20" uuid="7b527b81-4d92-4597-9664-6fb12a246dfb"/>
 				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="398" y="1" width="107" height="20" uuid="d97140e5-177a-456d-8f14-06dafe9789c9"/>
+				<reportElement x="354" y="0" width="80" height="20" uuid="d97140e5-177a-456d-8f14-06dafe9789c9"/>
 				<textFieldExpression><![CDATA[$F{CAST(pr.fechainicio as Date)}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="437" y="0" width="100" height="20" uuid="ea11af78-d07d-4a34-9850-777419b66dd0"/>
+				<textFieldExpression><![CDATA[$F{nombres_tra}+" "+$F{apellidop_tra}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
