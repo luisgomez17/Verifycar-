@@ -884,8 +884,12 @@ public class Registro extends javax.swing.JInternalFrame {
 
         txtdescripcion.setBackground(new java.awt.Color(255, 255, 255));
         txtdescripcion.setColumns(20);
+
+        txtdescripcion.setLineWrap(true);
+
         txtdescripcion.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         txtdescripcion.setForeground(new java.awt.Color(51, 51, 55));
+
         txtdescripcion.setRows(5);
         txtdescripcion.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
         jScrollPane1.setViewportView(txtdescripcion);
@@ -1331,7 +1335,7 @@ public class Registro extends javax.swing.JInternalFrame {
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(rSPanelsSlider2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 669, Short.MAX_VALUE)
+            .addComponent(rSPanelsSlider2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 669, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

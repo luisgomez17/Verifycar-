@@ -1567,12 +1567,16 @@
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="columns" type="int" value="20"/>
+<<<<<<< HEAD
+                            <Property name="lineWrap" type="boolean" value="true"/>
+=======
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="37" green="33" red="33" type="rgb"/>
                             </Property>
+>>>>>>> 127d41dcc9f9768d951c13cca0361b17f82147ba
                             <Property name="rows" type="int" value="5"/>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                               <Border info="org.netbeans.modules.form.compat2.border.CompoundBorderInfo">
