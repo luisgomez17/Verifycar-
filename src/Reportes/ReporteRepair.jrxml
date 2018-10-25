@@ -14,7 +14,8 @@ JOIN orden as ord on ord.idorden = pr.id_orden
  JOIN auto as au on au.idauto = ord.id_auto
  JOIN servicio as ser on ser.idservicio = pr.id_servicio
  JOIN area as ar on ar.idarea = ser.id_area
-JOIN trabajador as tr on tr.idtrabajador = pr.id_trabajador
+JOIN trabajador as tr on tr.idtrabajador = cl.id_trabajador
+JOIN admin as ad on ad.idadmin = tr.id_admin
  WHERE ord.numorden = $P{orden}]]>
 	</queryString>
 	<field name="nombrearea" class="java.lang.String">

@@ -37,7 +37,7 @@ public class Login extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         esadministrador = false;
         estrabajador = false;
-        ImageIcon logo = new ImageIcon(getClass().getResource("/Imagenes/imagotiposistema.png"));
+        ImageIcon logo = new ImageIcon(getClass().getResource("/imagenes/imagotiposistema.png"));
         Icon fondo = new ImageIcon(logo.getImage().getScaledInstance(lbllogo.getWidth(), lbllogo.getHeight(), Image.SCALE_SMOOTH));
         lbllogo.setIcon(fondo);
         this.repaint();
@@ -224,9 +224,10 @@ public class Login extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(51, 51, 55));
         jLabel5.setText("Usuario:");
-        jLabel5.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        panel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(129, 12, 80, 30));
+        jLabel5.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(129, 22, 80, 20));
 
+        txtUser.setBackground(new java.awt.Color(255, 255, 255));
         txtUser.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         txtUser.setToolTipText("");
         txtUser.setBorder(null);
@@ -241,6 +242,7 @@ public class Login extends javax.swing.JFrame {
         jLabel1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         panel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 120, 30));
 
+        txtPass.setBackground(new java.awt.Color(255, 255, 255));
         txtPass.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         txtPass.setBorder(null);
         txtPass.setCaretColor(new java.awt.Color(51, 51, 51));
