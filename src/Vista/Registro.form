@@ -253,7 +253,7 @@
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                            <TitledBorder title="CLIENTE">
+                            <TitledBorder title="Cliente">
                               <Font PropertyName="font" name="Tahoma" size="14" style="1"/>
                               <Color PropertyName="color" blue="37" green="33" red="33" type="rgb"/>
                             </TitledBorder>
@@ -359,9 +359,14 @@
                           <SubComponents>
                             <Component class="javax.swing.JList" name="listCliente">
                               <Properties>
+                                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                                </Property>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                                   <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                                    <LineBorder/>
+                                    <LineBorder>
+                                      <Color PropertyName="color" blue="37" green="33" red="33" type="rgb"/>
+                                    </LineBorder>
                                   </Border>
                                 </Property>
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -388,6 +393,9 @@
                         </Container>
                         <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="txtNombreCliente">
                           <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                            </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="37" green="33" red="33" type="rgb"/>
                             </Property>
@@ -493,7 +501,7 @@
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                            <TitledBorder title="AUTOMOVIL">
+                            <TitledBorder title="Autom&#xf3;vil">
                               <Font PropertyName="font" name="Tahoma" size="14" style="1"/>
                               <Color PropertyName="color" blue="37" green="33" red="33" type="rgb"/>
                             </TitledBorder>
@@ -547,9 +555,14 @@
                           <SubComponents>
                             <Component class="javax.swing.JList" name="listAuto">
                               <Properties>
+                                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                                </Property>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                                   <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                                    <LineBorder/>
+                                    <LineBorder>
+                                      <Color PropertyName="color" blue="37" green="33" red="33" type="rgb"/>
+                                    </LineBorder>
                                   </Border>
                                 </Property>
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -623,7 +636,7 @@
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                        <TitledBorder justification="2" title="REGISTRAR CLIENTE">
+                        <TitledBorder justification="2" title="Registrar Cliente">
                           <Font PropertyName="font" name="Tahoma" size="14" style="1"/>
                           <Color PropertyName="color" blue="37" green="33" red="33" type="rgb"/>
                         </TitledBorder>
@@ -666,7 +679,7 @@
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                            <TitledBorder title="NUEVO CLIENTE">
+                            <TitledBorder title="Nuevo Cliente">
                               <Font PropertyName="font" name="Tahoma" size="14" style="1"/>
                               <Color PropertyName="color" blue="37" green="33" red="33" type="rgb"/>
                             </TitledBorder>
@@ -735,8 +748,11 @@
                       <SubComponents>
                         <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="nombre">
                           <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                            </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="2d" green="2c" red="2c" type="rgb"/>
+                              <Color blue="37" green="33" red="33" type="rgb"/>
                             </Property>
                             <Property name="borderColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="2d" green="2c" red="2c" type="rgb"/>
@@ -761,8 +777,11 @@
                         </Component>
                         <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="colonia">
                           <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                            </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="2d" green="2c" red="2c" type="rgb"/>
+                              <Color blue="37" green="33" red="33" type="rgb"/>
                             </Property>
                             <Property name="borderColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="2d" green="2c" red="2c" type="rgb"/>
@@ -784,8 +803,11 @@
                         </Component>
                         <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="telefono">
                           <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                            </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="2d" green="2c" red="2c" type="rgb"/>
+                              <Color blue="37" green="33" red="33" type="rgb"/>
                             </Property>
                             <Property name="borderColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="2d" green="2c" red="2c" type="rgb"/>
@@ -807,8 +829,11 @@
                         </Component>
                         <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="correo">
                           <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                            </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="2d" green="2c" red="2c" type="rgb"/>
+                              <Color blue="37" green="33" red="33" type="rgb"/>
                             </Property>
                             <Property name="borderColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="2d" green="2c" red="2c" type="rgb"/>
@@ -830,8 +855,11 @@
                         </Component>
                         <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="calle">
                           <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                            </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="2d" green="2c" red="2c" type="rgb"/>
+                              <Color blue="37" green="33" red="33" type="rgb"/>
                             </Property>
                             <Property name="borderColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="2d" green="2c" red="2c" type="rgb"/>
@@ -853,8 +881,11 @@
                         </Component>
                         <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="num_casa">
                           <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                            </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="2d" green="2c" red="2c" type="rgb"/>
+                              <Color blue="37" green="33" red="33" type="rgb"/>
                             </Property>
                             <Property name="borderColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="2d" green="2c" red="2c" type="rgb"/>
@@ -920,7 +951,7 @@
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                            <TitledBorder title="REGISTRAR AUTOMOVIL">
+                            <TitledBorder title="Registrar Autom&#xf3;vil">
                               <Font PropertyName="font" name="Tahoma" size="14" style="1"/>
                               <Color PropertyName="color" blue="37" green="33" red="33" type="rgb"/>
                             </TitledBorder>
@@ -994,8 +1025,11 @@
                       <SubComponents>
                         <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="modelo">
                           <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                            </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="0" red="0" type="rgb"/>
+                              <Color blue="37" green="33" red="33" type="rgb"/>
                             </Property>
                             <Property name="borderColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="2d" green="2c" red="2c" type="rgb"/>
@@ -1017,8 +1051,11 @@
                         </Component>
                         <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="marca">
                           <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                            </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="0" red="0" type="rgb"/>
+                              <Color blue="37" green="33" red="33" type="rgb"/>
                             </Property>
                             <Property name="borderColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="2d" green="2c" red="2c" type="rgb"/>
@@ -1040,8 +1077,11 @@
                         </Component>
                         <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="placa">
                           <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                            </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="0" red="0" type="rgb"/>
+                              <Color blue="37" green="33" red="33" type="rgb"/>
                             </Property>
                             <Property name="borderColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="2d" green="2c" red="2c" type="rgb"/>
@@ -1063,8 +1103,11 @@
                         </Component>
                         <Component class="rojerusan.RSMetroTextFullPlaceHolder" name="color">
                           <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                            </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="0" red="0" type="rgb"/>
+                              <Color blue="37" green="33" red="33" type="rgb"/>
                             </Property>
                             <Property name="borderColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="2d" green="2c" red="2c" type="rgb"/>
@@ -1176,17 +1219,17 @@
                                   </Group>
                                   <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="jPanel12" pref="420" max="32767" attributes="0"/>
+                                      <Component id="jPanel12" min="-2" pref="474" max="-2" attributes="0"/>
                                       <Component id="jPanel4" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" attributes="0">
                                   <Component id="btnatras" min="-2" pref="69" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="557" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="558" max="-2" attributes="0"/>
                                   <Component id="btnfinalizar" min="-2" pref="102" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="461" max="32767" attributes="0"/>
+                          <EmptySpace pref="407" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1210,12 +1253,12 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="btnfinalizar" pref="33" max="32767" attributes="0"/>
-                              <Component id="btnatras" max="32767" attributes="0"/>
+                              <Component id="btnfinalizar" max="32767" attributes="0"/>
+                              <Component id="btnatras" min="-2" pref="33" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1258,20 +1301,11 @@
                   <SubComponents>
                     <Component class="rojerusan.RSComboMetro" name="boxArea">
                       <Properties>
-                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                          <Border info="org.netbeans.modules.form.compat2.border.CompoundBorderInfo">
-                            <CompoundBorder>
-                              <Border PropertyName="outside" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                                <LineBorder/>
-                              </Border>
-                              <Border PropertyName="inside" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                                <LineBorder/>
-                              </Border>
-                            </CompoundBorder>
-                          </Border>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="0" red="0" type="rgb"/>
+                          <Color blue="37" green="33" red="33" type="rgb"/>
                         </Property>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                           <StringArray count="0"/>
@@ -1348,6 +1382,9 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="12" style="1"/>
                         </Property>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="37" green="33" red="33" type="rgb"/>
+                        </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.CompoundBorderInfo">
                             <CompoundBorder>
@@ -1388,6 +1425,8 @@
                         </Property>
                       </Properties>
                       <Events>
+                        <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="btnBuscarServicioMouseMoved"/>
+                        <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnBuscarServicioMouseExited"/>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuscarServicioActionPerformed"/>
                       </Events>
                     </Component>
@@ -1417,6 +1456,9 @@
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="1"/>
+                            </Property>
+                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="37" green="33" red="33" type="rgb"/>
                             </Property>
                             <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                               <StringArray count="0"/>
@@ -1500,6 +1542,9 @@
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="1"/>
                             </Property>
+                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="37" green="33" red="33" type="rgb"/>
+                            </Property>
                             <Property name="rows" type="int" value="5"/>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                               <Border info="org.netbeans.modules.form.compat2.border.CompoundBorderInfo">
@@ -1541,18 +1586,6 @@
                     </Component>
                     <Component class="rojerusan.RSComboMetro" name="boxEncargado">
                       <Properties>
-                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                          <Border info="org.netbeans.modules.form.compat2.border.CompoundBorderInfo">
-                            <CompoundBorder>
-                              <Border PropertyName="outside" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                                <LineBorder/>
-                              </Border>
-                              <Border PropertyName="inside" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                                <LineBorder/>
-                              </Border>
-                            </CompoundBorder>
-                          </Border>
-                        </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="0" type="rgb"/>
                         </Property>
@@ -1656,6 +1689,9 @@
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="1"/>
                             </Property>
+                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="37" green="33" red="33" type="rgb"/>
+                            </Property>
                             <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                               <StringArray count="0"/>
                             </Property>
@@ -1684,6 +1720,9 @@
                             <Property name="columns" type="int" value="20"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="1"/>
+                            </Property>
+                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="37" green="33" red="33" type="rgb"/>
                             </Property>
                             <Property name="rows" type="int" value="5"/>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1728,6 +1767,8 @@
                         </Property>
                       </Properties>
                       <Events>
+                        <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="btnEliminarMouseMoved"/>
+                        <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnEliminarMouseExited"/>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEliminarActionPerformed"/>
                       </Events>
                     </Component>
@@ -1759,6 +1800,8 @@
                     </Property>
                   </Properties>
                   <Events>
+                    <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="btnatrasMouseMoved"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnatrasMouseExited"/>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnatrasActionPerformed"/>
                   </Events>
                 </Component>
@@ -1788,6 +1831,8 @@
                     </Property>
                   </Properties>
                   <Events>
+                    <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="btnfinalizarMouseMoved"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnfinalizarMouseExited"/>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnfinalizarActionPerformed"/>
                   </Events>
                 </Component>
@@ -1841,6 +1886,8 @@
                         </Property>
                       </Properties>
                       <Events>
+                        <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="btnAgregarMouseMoved"/>
+                        <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAgregarMouseExited"/>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAgregarActionPerformed"/>
                       </Events>
                     </Component>
@@ -1886,18 +1933,6 @@
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
-                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                          <Border info="org.netbeans.modules.form.compat2.border.CompoundBorderInfo">
-                            <CompoundBorder>
-                              <Border PropertyName="outside" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                                <LineBorder/>
-                              </Border>
-                              <Border PropertyName="inside" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                                <LineBorder/>
-                              </Border>
-                            </CompoundBorder>
-                          </Border>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="37" green="33" red="33" type="rgb"/>
@@ -1948,7 +1983,7 @@
                           <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="jPanel13" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="336" max="32767" attributes="0"/>
+                          <EmptySpace pref="339" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1959,7 +1994,7 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="18" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="REGISTRO REALIZADO"/>
+                    <Property name="text" type="java.lang.String" value="Registro Realizado"/>
                   </Properties>
                 </Component>
                 <Container class="javax.swing.JPanel" name="jPanel13">
@@ -2040,10 +2075,25 @@
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="24" green="1f" red="ed" type="rgb"/>
                         </Property>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Tahoma" size="14" style="1"/>
+                        </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Enviar"/>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.CompoundBorderInfo">
+                            <CompoundBorder>
+                              <Border PropertyName="outside" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder/>
+                              </Border>
+                              <Border PropertyName="inside" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder/>
+                              </Border>
+                            </CompoundBorder>
+                          </Border>
+                        </Property>
                       </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="EnviarCorreoActionPerformed"/>
@@ -2054,10 +2104,25 @@
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="24" green="1f" red="ed" type="rgb"/>
                         </Property>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Tahoma" size="14" style="1"/>
+                        </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Enviar"/>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.CompoundBorderInfo">
+                            <CompoundBorder>
+                              <Border PropertyName="outside" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder/>
+                              </Border>
+                              <Border PropertyName="inside" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder/>
+                              </Border>
+                            </CompoundBorder>
+                          </Border>
+                        </Property>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="lblGuia">

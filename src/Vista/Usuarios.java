@@ -438,8 +438,9 @@ ArrayList<trabajadorVo> p ;
         editar.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 47, 1099, 132));
 
         jPanel10.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel10.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "TRABAJADOR", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
+        jPanel10.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Trabajador", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
 
+        txtTrabajo2.setBackground(new java.awt.Color(255, 255, 255));
         txtTrabajo2.setForeground(new java.awt.Color(51, 51, 55));
         txtTrabajo2.setBorderColor(new java.awt.Color(0, 0, 0));
         txtTrabajo2.setBotonColor(new java.awt.Color(0, 0, 0));
@@ -452,6 +453,7 @@ ArrayList<trabajadorVo> p ;
             }
         });
 
+        txtPaterno2.setBackground(new java.awt.Color(255, 255, 255));
         txtPaterno2.setForeground(new java.awt.Color(51, 51, 55));
         txtPaterno2.setBorderColor(new java.awt.Color(0, 0, 0));
         txtPaterno2.setBotonColor(new java.awt.Color(0, 0, 0));
@@ -464,6 +466,7 @@ ArrayList<trabajadorVo> p ;
             }
         });
 
+        txtMaterno2.setBackground(new java.awt.Color(255, 255, 255));
         txtMaterno2.setForeground(new java.awt.Color(51, 51, 55));
         txtMaterno2.setBorderColor(new java.awt.Color(0, 0, 0));
         txtMaterno2.setBotonColor(new java.awt.Color(0, 0, 0));
@@ -476,6 +479,7 @@ ArrayList<trabajadorVo> p ;
             }
         });
 
+        txtNombre2.setBackground(new java.awt.Color(255, 255, 255));
         txtNombre2.setForeground(new java.awt.Color(51, 51, 55));
         txtNombre2.setBorderColor(new java.awt.Color(0, 0, 0));
         txtNombre2.setBotonColor(new java.awt.Color(0, 0, 0));
@@ -488,6 +492,7 @@ ArrayList<trabajadorVo> p ;
             }
         });
 
+        txtEdad2.setBackground(new java.awt.Color(255, 255, 255));
         txtEdad2.setForeground(new java.awt.Color(51, 51, 55));
         txtEdad2.setBorderColor(new java.awt.Color(0, 0, 0));
         txtEdad2.setBotonColor(new java.awt.Color(0, 0, 0));
@@ -525,6 +530,7 @@ ArrayList<trabajadorVo> p ;
             }
         });
 
+        txtPass2.setBackground(new java.awt.Color(255, 255, 255));
         txtPass2.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
         txtPass2.setForeground(new java.awt.Color(51, 51, 55));
         txtPass2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
