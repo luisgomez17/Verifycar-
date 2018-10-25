@@ -70,8 +70,8 @@ public class Registro extends javax.swing.JInternalFrame {
         jPanel9.setFont(tipoFuente.fuente(tipoFuente.PTD, 2, 30));
         jLabel2.setFont(tipoFuente.fuente(tipoFuente.PTD, 2, 30));
         jLabel3.setFont(tipoFuente.fuente(tipoFuente.PTD, 2, 22));
-        jLabel3.setFont(tipoFuente.fuente(tipoFuente.PTD, 2, 22));
-        jLabel3.setFont(tipoFuente.fuente(tipoFuente.PTD, 2, 22));
+        jLabel4.setFont(tipoFuente.fuente(tipoFuente.PTD, 2, 22));
+        jLabel5.setFont(tipoFuente.fuente(tipoFuente.PTD, 2, 22));
 
     }
     
@@ -209,7 +209,7 @@ public class Registro extends javax.swing.JInternalFrame {
         });
 
         jPanel9.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel9.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "BUSCAR CLIENTE", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
+        jPanel9.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Buscar Cliente", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
         jPanel9.setForeground(new java.awt.Color(51, 51, 55));
 
         jPanel8.setBackground(new java.awt.Color(255, 255, 255));
@@ -359,7 +359,7 @@ public class Registro extends javax.swing.JInternalFrame {
         listAuto.setBackground(new java.awt.Color(255, 255, 255));
         listAuto.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 51, 55)));
         listAuto.setForeground(new java.awt.Color(51, 51, 55));
-        listAuto.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        listAuto.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         listAuto.setSelectionBackground(new java.awt.Color(204, 204, 204));
         listAuto.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -446,6 +446,7 @@ public class Registro extends javax.swing.JInternalFrame {
         nombre.setForeground(new java.awt.Color(51, 51, 55));
         nombre.setBorderColor(new java.awt.Color(44, 44, 45));
         nombre.setBotonColor(new java.awt.Color(44, 44, 45));
+        nombre.setDisabledTextColor(new java.awt.Color(60, 60, 63));
         nombre.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         nombre.setPhColor(new java.awt.Color(44, 44, 45));
         nombre.setPlaceholder("NOMBRE");
@@ -460,6 +461,7 @@ public class Registro extends javax.swing.JInternalFrame {
         colonia.setForeground(new java.awt.Color(51, 51, 55));
         colonia.setBorderColor(new java.awt.Color(44, 44, 45));
         colonia.setBotonColor(new java.awt.Color(44, 44, 45));
+        colonia.setDisabledTextColor(new java.awt.Color(60, 60, 63));
         colonia.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         colonia.setPhColor(new java.awt.Color(44, 44, 45));
         colonia.setPlaceholder("COLONIA");
@@ -473,6 +475,7 @@ public class Registro extends javax.swing.JInternalFrame {
         telefono.setForeground(new java.awt.Color(51, 51, 55));
         telefono.setBorderColor(new java.awt.Color(44, 44, 45));
         telefono.setBotonColor(new java.awt.Color(44, 44, 45));
+        telefono.setDisabledTextColor(new java.awt.Color(60, 60, 63));
         telefono.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         telefono.setPhColor(new java.awt.Color(44, 44, 45));
         telefono.setPlaceholder("TELEFONO");
@@ -486,6 +489,7 @@ public class Registro extends javax.swing.JInternalFrame {
         correo.setForeground(new java.awt.Color(51, 51, 55));
         correo.setBorderColor(new java.awt.Color(44, 44, 45));
         correo.setBotonColor(new java.awt.Color(44, 44, 45));
+        correo.setDisabledTextColor(new java.awt.Color(60, 60, 63));
         correo.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         correo.setPhColor(new java.awt.Color(44, 44, 45));
         correo.setPlaceholder("CORREO");
@@ -499,6 +503,7 @@ public class Registro extends javax.swing.JInternalFrame {
         calle.setForeground(new java.awt.Color(51, 51, 55));
         calle.setBorderColor(new java.awt.Color(44, 44, 45));
         calle.setBotonColor(new java.awt.Color(44, 44, 45));
+        calle.setDisabledTextColor(new java.awt.Color(60, 60, 63));
         calle.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         calle.setPhColor(new java.awt.Color(44, 44, 45));
         calle.setPlaceholder("CALLE");
@@ -512,6 +517,7 @@ public class Registro extends javax.swing.JInternalFrame {
         num_casa.setForeground(new java.awt.Color(51, 51, 55));
         num_casa.setBorderColor(new java.awt.Color(44, 44, 45));
         num_casa.setBotonColor(new java.awt.Color(44, 44, 45));
+        num_casa.setDisabledTextColor(new java.awt.Color(60, 60, 63));
         num_casa.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         num_casa.setPhColor(new java.awt.Color(44, 44, 45));
         num_casa.setPlaceholder("NUMERO CASA");
@@ -780,7 +786,6 @@ public class Registro extends javax.swing.JInternalFrame {
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Area", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
 
-        boxArea.setBackground(new java.awt.Color(255, 255, 255));
         boxArea.setForeground(new java.awt.Color(51, 51, 55));
         boxArea.setAutoscrolls(true);
         boxArea.setColorArrow(new java.awt.Color(44, 44, 45));
@@ -822,6 +827,10 @@ public class Registro extends javax.swing.JInternalFrame {
         btnBuscarServicio.setForeground(new java.awt.Color(255, 255, 255));
         btnBuscarServicio.setText("BUSCAR");
         btnBuscarServicio.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
+        btnBuscarServicio.setContentAreaFilled(false);
+        btnBuscarServicio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnBuscarServicio.setFocusable(false);
+        btnBuscarServicio.setOpaque(true);
         btnBuscarServicio.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 btnBuscarServicioMouseMoved(evt);
@@ -956,6 +965,10 @@ public class Registro extends javax.swing.JInternalFrame {
         btnEliminar.setForeground(new java.awt.Color(255, 255, 255));
         btnEliminar.setText("ELIMINAR");
         btnEliminar.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
+        btnEliminar.setContentAreaFilled(false);
+        btnEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEliminar.setFocusable(false);
+        btnEliminar.setOpaque(true);
         btnEliminar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 btnEliminarMouseMoved(evt);
@@ -1006,6 +1019,10 @@ public class Registro extends javax.swing.JInternalFrame {
         btnatras.setForeground(new java.awt.Color(255, 255, 255));
         btnatras.setText("ATRAS");
         btnatras.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
+        btnatras.setContentAreaFilled(false);
+        btnatras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnatras.setFocusable(false);
+        btnatras.setOpaque(true);
         btnatras.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 btnatrasMouseMoved(evt);
@@ -1027,6 +1044,10 @@ public class Registro extends javax.swing.JInternalFrame {
         btnfinalizar.setForeground(new java.awt.Color(255, 255, 255));
         btnfinalizar.setText("FINALIZAR");
         btnfinalizar.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
+        btnfinalizar.setContentAreaFilled(false);
+        btnfinalizar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnfinalizar.setFocusable(false);
+        btnfinalizar.setOpaque(true);
         btnfinalizar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 btnfinalizarMouseMoved(evt);
@@ -1049,6 +1070,10 @@ public class Registro extends javax.swing.JInternalFrame {
         btnAgregar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnAgregar.setText("Agregar");
         btnAgregar.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
+        btnAgregar.setContentAreaFilled(false);
+        btnAgregar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAgregar.setFocusable(false);
+        btnAgregar.setOpaque(true);
         btnAgregar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 btnAgregarMouseMoved(evt);
@@ -1096,9 +1121,9 @@ public class Registro extends javax.swing.JInternalFrame {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(94, Short.MAX_VALUE)
                 .addComponent(txtGuia, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(95, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1115,21 +1140,23 @@ public class Registro extends javax.swing.JInternalFrame {
             .addGroup(registroservicioLayout.createSequentialGroup()
                 .addGap(50, 50, 50)
                 .addGroup(registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanel7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnatras, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(registroservicioLayout.createSequentialGroup()
-                        .addGroup(registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(109, 109, 109)
-                        .addGroup(registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 249, Short.MAX_VALUE)
+                        .addGroup(registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, 474, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(registroservicioLayout.createSequentialGroup()
-                        .addComponent(btnatras, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(558, 558, 558)
-                        .addComponent(btnfinalizar, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(407, Short.MAX_VALUE))
+                            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(267, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, registroservicioLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnfinalizar, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         registroservicioLayout.setVerticalGroup(
             registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1139,20 +1166,21 @@ public class Registro extends javax.swing.JInternalFrame {
                     .addGroup(registroservicioLayout.createSequentialGroup()
                         .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(registroservicioLayout.createSequentialGroup()
                         .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnfinalizar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnatras, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(56, 56, 56))
+                        .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnatras, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnfinalizar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(56, 56, 56))))
         );
 
         rSPanelsSlider2.add(registroservicio, "card3");
@@ -1184,6 +1212,10 @@ public class Registro extends javax.swing.JInternalFrame {
         EnviarCorreo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Icon_SendEmail_32.png"))); // NOI18N
         EnviarCorreo.setText("Enviar");
         EnviarCorreo.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
+        EnviarCorreo.setContentAreaFilled(false);
+        EnviarCorreo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        EnviarCorreo.setFocusable(false);
+        EnviarCorreo.setOpaque(true);
         EnviarCorreo.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 EnviarCorreoMouseMoved(evt);
@@ -1206,6 +1238,11 @@ public class Registro extends javax.swing.JInternalFrame {
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Icon_SendPhoneNumber_32.png"))); // NOI18N
         jButton7.setText("Enviar");
         jButton7.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
+        jButton7.setContentAreaFilled(false);
+        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton7.setEnabled(false);
+        jButton7.setFocusable(false);
+        jButton7.setOpaque(true);
         jButton7.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 jButton7MouseMoved(evt);
@@ -1218,6 +1255,7 @@ public class Registro extends javax.swing.JInternalFrame {
         });
 
         lblGuia.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblGuia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblGuia.setToolTipText("");
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
@@ -1225,29 +1263,31 @@ public class Registro extends javax.swing.JInternalFrame {
         jPanel13Layout.setHorizontalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel13Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
-                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
-                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(EnviarCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(54, 54, 54))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
-                        .addComponent(lblGuia, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(20, 20, 20))))
+                    .addGroup(jPanel13Layout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblGuia, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel13Layout.createSequentialGroup()
+                            .addComponent(jLabel4)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(EnviarCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel13Layout.createSequentialGroup()
+                            .addComponent(jLabel5)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(103, Short.MAX_VALUE))
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel13Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
+                .addGap(20, 20, 20)
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblGuia, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
-                .addGap(17, 17, 17)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(EnviarCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1263,11 +1303,13 @@ public class Registro extends javax.swing.JInternalFrame {
         registrofinalizadoLayout.setHorizontalGroup(
             registrofinalizadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(registrofinalizadoLayout.createSequentialGroup()
-                .addContainerGap(483, Short.MAX_VALUE)
+                .addContainerGap(477, Short.MAX_VALUE)
                 .addGroup(registrofinalizadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
-                .addContainerGap(483, Short.MAX_VALUE))
+                    .addGroup(registrofinalizadoLayout.createSequentialGroup()
+                        .addGap(11, 11, 11)
+                        .addComponent(jLabel2)))
+                .addContainerGap(477, Short.MAX_VALUE))
         );
         registrofinalizadoLayout.setVerticalGroup(
             registrofinalizadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
