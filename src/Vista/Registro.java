@@ -785,7 +785,8 @@ public class Registro extends javax.swing.JInternalFrame {
         boxArea.setAutoscrolls(true);
         boxArea.setColorArrow(new java.awt.Color(44, 44, 45));
         boxArea.setColorBorde(new java.awt.Color(44, 44, 45));
-        boxArea.setColorFondo(new java.awt.Color(240, 240, 240));
+        boxArea.setColorFondo(new java.awt.Color(255, 255, 255));
+        boxArea.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         boxArea.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boxAreaActionPerformed(evt);
@@ -892,7 +893,7 @@ public class Registro extends javax.swing.JInternalFrame {
         boxEncargado.setAutoscrolls(true);
         boxEncargado.setColorArrow(new java.awt.Color(44, 44, 45));
         boxEncargado.setColorBorde(new java.awt.Color(44, 44, 45));
-        boxEncargado.setColorFondo(new java.awt.Color(240, 240, 240));
+        boxEncargado.setColorFondo(new java.awt.Color(255, 255, 255));
         boxEncargado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boxEncargadoActionPerformed(evt);
