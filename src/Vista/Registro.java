@@ -68,6 +68,11 @@ public class Registro extends javax.swing.JInternalFrame {
         jLabel1.setFont(tipoFuente.fuente(tipoFuente.PTD, 2, 30));
         //jPanel9.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "BUSCAR CLIENTE", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font(tipoFuente.fuente(tipoFuente.PTD,2, 30)), new java.awt.Color(51, 51, 55))); // NOI18N
         jPanel9.setFont(tipoFuente.fuente(tipoFuente.PTD, 2, 30));
+        jLabel2.setFont(tipoFuente.fuente(tipoFuente.PTD, 2, 30));
+        jLabel3.setFont(tipoFuente.fuente(tipoFuente.PTD, 2, 22));
+        jLabel3.setFont(tipoFuente.fuente(tipoFuente.PTD, 2, 22));
+        jLabel3.setFont(tipoFuente.fuente(tipoFuente.PTD, 2, 22));
+
     }
     
     public void setCoordinador(Coordinador miCoordinador) {
@@ -208,7 +213,7 @@ public class Registro extends javax.swing.JInternalFrame {
         jPanel9.setForeground(new java.awt.Color(51, 51, 55));
 
         jPanel8.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel8.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "CLIENTE", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
+        jPanel8.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Cliente", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
         jPanel8.setForeground(new java.awt.Color(51, 51, 55));
 
         btnBuscarCliente.setBackground(new java.awt.Color(237, 31, 36));
@@ -238,7 +243,8 @@ public class Registro extends javax.swing.JInternalFrame {
 
         jScrollPane3.setBorder(null);
 
-        listCliente.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        listCliente.setBackground(new java.awt.Color(255, 255, 255));
+        listCliente.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 51, 55)));
         listCliente.setForeground(new java.awt.Color(51, 51, 55));
         listCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         listCliente.setSelectionBackground(new java.awt.Color(204, 204, 204));
@@ -249,6 +255,7 @@ public class Registro extends javax.swing.JInternalFrame {
         });
         jScrollPane3.setViewportView(listCliente);
 
+        txtNombreCliente.setBackground(new java.awt.Color(255, 255, 255));
         txtNombreCliente.setForeground(new java.awt.Color(51, 51, 55));
         txtNombreCliente.setBorderColor(new java.awt.Color(0, 0, 0));
         txtNombreCliente.setBotonColor(new java.awt.Color(0, 0, 0));
@@ -344,12 +351,13 @@ public class Registro extends javax.swing.JInternalFrame {
         );
 
         jPanel10.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel10.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "AUTOMOVIL", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
+        jPanel10.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Automóvil", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
         jPanel10.setForeground(new java.awt.Color(51, 51, 55));
 
         jScrollPane7.setBorder(null);
 
-        listAuto.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        listAuto.setBackground(new java.awt.Color(255, 255, 255));
+        listAuto.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 51, 55)));
         listAuto.setForeground(new java.awt.Color(51, 51, 55));
         listAuto.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         listAuto.setSelectionBackground(new java.awt.Color(204, 204, 204));
@@ -427,14 +435,15 @@ public class Registro extends javax.swing.JInternalFrame {
         );
 
         jPanel11.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel11.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "REGISTRAR CLIENTE", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
+        jPanel11.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Registrar Cliente", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
         jPanel11.setForeground(new java.awt.Color(51, 51, 55));
 
         panelCliente.setBackground(new java.awt.Color(255, 255, 255));
-        panelCliente.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "NUEVO CLIENTE", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
+        panelCliente.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Nuevo Cliente", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
         panelCliente.setForeground(new java.awt.Color(51, 51, 55));
 
-        nombre.setForeground(new java.awt.Color(44, 44, 45));
+        nombre.setBackground(new java.awt.Color(255, 255, 255));
+        nombre.setForeground(new java.awt.Color(51, 51, 55));
         nombre.setBorderColor(new java.awt.Color(44, 44, 45));
         nombre.setBotonColor(new java.awt.Color(44, 44, 45));
         nombre.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -447,7 +456,8 @@ public class Registro extends javax.swing.JInternalFrame {
             }
         });
 
-        colonia.setForeground(new java.awt.Color(44, 44, 45));
+        colonia.setBackground(new java.awt.Color(255, 255, 255));
+        colonia.setForeground(new java.awt.Color(51, 51, 55));
         colonia.setBorderColor(new java.awt.Color(44, 44, 45));
         colonia.setBotonColor(new java.awt.Color(44, 44, 45));
         colonia.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -459,7 +469,8 @@ public class Registro extends javax.swing.JInternalFrame {
             }
         });
 
-        telefono.setForeground(new java.awt.Color(44, 44, 45));
+        telefono.setBackground(new java.awt.Color(255, 255, 255));
+        telefono.setForeground(new java.awt.Color(51, 51, 55));
         telefono.setBorderColor(new java.awt.Color(44, 44, 45));
         telefono.setBotonColor(new java.awt.Color(44, 44, 45));
         telefono.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -471,7 +482,8 @@ public class Registro extends javax.swing.JInternalFrame {
             }
         });
 
-        correo.setForeground(new java.awt.Color(44, 44, 45));
+        correo.setBackground(new java.awt.Color(255, 255, 255));
+        correo.setForeground(new java.awt.Color(51, 51, 55));
         correo.setBorderColor(new java.awt.Color(44, 44, 45));
         correo.setBotonColor(new java.awt.Color(44, 44, 45));
         correo.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -483,7 +495,8 @@ public class Registro extends javax.swing.JInternalFrame {
             }
         });
 
-        calle.setForeground(new java.awt.Color(44, 44, 45));
+        calle.setBackground(new java.awt.Color(255, 255, 255));
+        calle.setForeground(new java.awt.Color(51, 51, 55));
         calle.setBorderColor(new java.awt.Color(44, 44, 45));
         calle.setBotonColor(new java.awt.Color(44, 44, 45));
         calle.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -495,7 +508,8 @@ public class Registro extends javax.swing.JInternalFrame {
             }
         });
 
-        num_casa.setForeground(new java.awt.Color(44, 44, 45));
+        num_casa.setBackground(new java.awt.Color(255, 255, 255));
+        num_casa.setForeground(new java.awt.Color(51, 51, 55));
         num_casa.setBorderColor(new java.awt.Color(44, 44, 45));
         num_casa.setBotonColor(new java.awt.Color(44, 44, 45));
         num_casa.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -578,10 +592,11 @@ public class Registro extends javax.swing.JInternalFrame {
         );
 
         panelAuto.setBackground(new java.awt.Color(255, 255, 255));
-        panelAuto.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "REGISTRAR AUTOMOVIL", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
+        panelAuto.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Registrar Automóvil", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
         panelAuto.setForeground(new java.awt.Color(51, 51, 55));
 
-        modelo.setForeground(new java.awt.Color(0, 0, 0));
+        modelo.setBackground(new java.awt.Color(255, 255, 255));
+        modelo.setForeground(new java.awt.Color(51, 51, 55));
         modelo.setBorderColor(new java.awt.Color(44, 44, 45));
         modelo.setBotonColor(new java.awt.Color(44, 44, 45));
         modelo.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -593,7 +608,8 @@ public class Registro extends javax.swing.JInternalFrame {
             }
         });
 
-        marca.setForeground(new java.awt.Color(0, 0, 0));
+        marca.setBackground(new java.awt.Color(255, 255, 255));
+        marca.setForeground(new java.awt.Color(51, 51, 55));
         marca.setBorderColor(new java.awt.Color(44, 44, 45));
         marca.setBotonColor(new java.awt.Color(44, 44, 45));
         marca.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -605,7 +621,8 @@ public class Registro extends javax.swing.JInternalFrame {
             }
         });
 
-        placa.setForeground(new java.awt.Color(0, 0, 0));
+        placa.setBackground(new java.awt.Color(255, 255, 255));
+        placa.setForeground(new java.awt.Color(51, 51, 55));
         placa.setBorderColor(new java.awt.Color(44, 44, 45));
         placa.setBotonColor(new java.awt.Color(44, 44, 45));
         placa.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -617,7 +634,8 @@ public class Registro extends javax.swing.JInternalFrame {
             }
         });
 
-        color.setForeground(new java.awt.Color(0, 0, 0));
+        color.setBackground(new java.awt.Color(255, 255, 255));
+        color.setForeground(new java.awt.Color(51, 51, 55));
         color.setBorderColor(new java.awt.Color(44, 44, 45));
         color.setBotonColor(new java.awt.Color(44, 44, 45));
         color.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -756,15 +774,19 @@ public class Registro extends javax.swing.JInternalFrame {
 
         rSPanelsSlider2.add(registrocliente, "card2");
 
+        registroservicio.setBackground(new java.awt.Color(255, 255, 255));
         registroservicio.setName("registroservicio"); // NOI18N
 
-        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "AREA", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
+        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Area", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
 
-        boxArea.setForeground(new java.awt.Color(0, 0, 0));
+        boxArea.setBackground(new java.awt.Color(255, 255, 255));
+        boxArea.setForeground(new java.awt.Color(51, 51, 55));
         boxArea.setAutoscrolls(true);
         boxArea.setColorArrow(new java.awt.Color(44, 44, 45));
         boxArea.setColorBorde(new java.awt.Color(44, 44, 45));
-        boxArea.setColorFondo(new java.awt.Color(240, 240, 240));
+        boxArea.setColorFondo(new java.awt.Color(255, 255, 255));
+        boxArea.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         boxArea.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boxAreaActionPerformed(evt);
@@ -787,17 +809,39 @@ public class Registro extends javax.swing.JInternalFrame {
                 .addComponent(boxArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "SERVICIOS", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Servicios", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
+
+        txtNombreServicio.setBackground(new java.awt.Color(255, 255, 255));
+        txtNombreServicio.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        txtNombreServicio.setForeground(new java.awt.Color(51, 51, 55));
+        txtNombreServicio.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
 
         btnBuscarServicio.setBackground(new java.awt.Color(237, 31, 36));
+        btnBuscarServicio.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnBuscarServicio.setForeground(new java.awt.Color(255, 255, 255));
         btnBuscarServicio.setText("BUSCAR");
+        btnBuscarServicio.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
+        btnBuscarServicio.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                btnBuscarServicioMouseMoved(evt);
+            }
+        });
+        btnBuscarServicio.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnBuscarServicioMouseExited(evt);
+            }
+        });
         btnBuscarServicio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBuscarServicioActionPerformed(evt);
             }
         });
 
+        listServicios.setBackground(new java.awt.Color(255, 255, 255));
+        listServicios.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
+        listServicios.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        listServicios.setForeground(new java.awt.Color(51, 51, 55));
         listServicios.setSelectionBackground(new java.awt.Color(204, 204, 204));
         jScrollPane2.setViewportView(listServicios);
 
@@ -809,42 +853,51 @@ public class Registro extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane2)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
+                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(txtNombreServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnBuscarServicio)))
+                        .addComponent(btnBuscarServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(19, 19, 19))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtNombreServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnBuscarServicio))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnBuscarServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNombreServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "DESCRIPCION", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
+        jPanel7.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Descripción", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
 
+        txtdescripcion.setBackground(new java.awt.Color(255, 255, 255));
         txtdescripcion.setColumns(20);
+<<<<<<< HEAD
         txtdescripcion.setLineWrap(true);
+=======
+        txtdescripcion.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        txtdescripcion.setForeground(new java.awt.Color(51, 51, 55));
+>>>>>>> 127d41dcc9f9768d951c13cca0361b17f82147ba
         txtdescripcion.setRows(5);
+        txtdescripcion.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
         jScrollPane1.setViewportView(txtdescripcion);
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel7.setText("OBSERVACIONES");
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(51, 51, 55));
+        jLabel7.setText("Observaciones");
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel8.setText("ENCARGADO:");
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(51, 51, 55));
+        jLabel8.setText("Encargado");
 
         boxEncargado.setForeground(new java.awt.Color(0, 0, 0));
         boxEncargado.setAutoscrolls(true);
         boxEncargado.setColorArrow(new java.awt.Color(44, 44, 45));
         boxEncargado.setColorBorde(new java.awt.Color(44, 44, 45));
-        boxEncargado.setColorFondo(new java.awt.Color(240, 240, 240));
+        boxEncargado.setColorFondo(new java.awt.Color(255, 255, 255));
         boxEncargado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boxEncargadoActionPerformed(evt);
@@ -880,8 +933,13 @@ public class Registro extends javax.swing.JInternalFrame {
                 .addComponent(boxEncargado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel12.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "SERVICIOS A REALIZAR", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
+        jPanel12.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel12.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Servicios a Realizar", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
 
+        listServiciosaRealizar.setBackground(new java.awt.Color(255, 255, 255));
+        listServiciosaRealizar.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
+        listServiciosaRealizar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        listServiciosaRealizar.setForeground(new java.awt.Color(51, 51, 55));
         listServiciosaRealizar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 listServiciosaRealizarMouseClicked(evt);
@@ -889,13 +947,29 @@ public class Registro extends javax.swing.JInternalFrame {
         });
         jScrollPane5.setViewportView(listServiciosaRealizar);
 
+        txtverdescripcion.setBackground(new java.awt.Color(255, 255, 255));
         txtverdescripcion.setColumns(20);
+        txtverdescripcion.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        txtverdescripcion.setForeground(new java.awt.Color(51, 51, 55));
         txtverdescripcion.setRows(5);
+        txtverdescripcion.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
         jScrollPane6.setViewportView(txtverdescripcion);
 
         btnEliminar.setBackground(new java.awt.Color(237, 31, 36));
+        btnEliminar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnEliminar.setForeground(new java.awt.Color(255, 255, 255));
         btnEliminar.setText("ELIMINAR");
+        btnEliminar.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
+        btnEliminar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                btnEliminarMouseMoved(evt);
+            }
+        });
+        btnEliminar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnEliminarMouseExited(evt);
+            }
+        });
         btnEliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEliminarActionPerformed(evt);
@@ -912,8 +986,8 @@ public class Registro extends javax.swing.JInternalFrame {
                         .addContainerGap()
                         .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel12Layout.createSequentialGroup()
-                        .addGap(68, 68, 68)
-                        .addComponent(btnEliminar)))
+                        .addGap(58, 58, 58)
+                        .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -925,15 +999,27 @@ public class Registro extends javax.swing.JInternalFrame {
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel12Layout.createSequentialGroup()
                         .addComponent(jScrollPane5)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnEliminar))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 224, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
         btnatras.setBackground(new java.awt.Color(237, 31, 36));
+        btnatras.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnatras.setForeground(new java.awt.Color(255, 255, 255));
         btnatras.setText("ATRAS");
+        btnatras.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
+        btnatras.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                btnatrasMouseMoved(evt);
+            }
+        });
+        btnatras.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnatrasMouseExited(evt);
+            }
+        });
         btnatras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnatrasActionPerformed(evt);
@@ -941,15 +1027,42 @@ public class Registro extends javax.swing.JInternalFrame {
         });
 
         btnfinalizar.setBackground(new java.awt.Color(237, 31, 36));
+        btnfinalizar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnfinalizar.setForeground(new java.awt.Color(255, 255, 255));
         btnfinalizar.setText("FINALIZAR");
+        btnfinalizar.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
+        btnfinalizar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                btnfinalizarMouseMoved(evt);
+            }
+        });
+        btnfinalizar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnfinalizarMouseExited(evt);
+            }
+        });
         btnfinalizar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnfinalizarActionPerformed(evt);
             }
         });
 
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+
+        btnAgregar.setBackground(new java.awt.Color(237, 31, 36));
+        btnAgregar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnAgregar.setText("Agregar");
+        btnAgregar.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
+        btnAgregar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                btnAgregarMouseMoved(evt);
+            }
+        });
+        btnAgregar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnAgregarMouseExited(evt);
+            }
+        });
         btnAgregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAgregarActionPerformed(evt);
@@ -960,22 +1073,23 @@ public class Registro extends javax.swing.JInternalFrame {
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnAgregar)
+                .addComponent(btnAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnAgregar)
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addComponent(btnAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 23, Short.MAX_VALUE))
         );
 
-        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "NUMERO DE ORDEN", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Numero de Orden", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
 
-        txtGuia.setForeground(new java.awt.Color(0, 0, 0));
+        txtGuia.setBackground(new java.awt.Color(255, 255, 255));
+        txtGuia.setForeground(new java.awt.Color(51, 51, 55));
         txtGuia.setBorderColor(new java.awt.Color(0, 0, 0));
         txtGuia.setBotonColor(new java.awt.Color(0, 0, 0));
         txtGuia.setPhColor(new java.awt.Color(153, 153, 153));
@@ -1013,14 +1127,13 @@ public class Registro extends javax.swing.JInternalFrame {
                             .addComponent(jPanel7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(109, 109, 109)
                         .addGroup(registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addContainerGap(461, Short.MAX_VALUE))
+                            .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, 474, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(registroservicioLayout.createSequentialGroup()
-                        .addComponent(btnatras)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnfinalizar)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addComponent(btnatras, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(558, 558, 558)
+                        .addComponent(btnfinalizar, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(407, Short.MAX_VALUE))
         );
         registroservicioLayout.setVerticalGroup(
             registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1040,31 +1153,51 @@ public class Registro extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnatras)
-                    .addComponent(btnfinalizar))
-                .addGap(68, 68, 68))
+                .addGroup(registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnfinalizar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnatras, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(56, 56, 56))
         );
 
         rSPanelsSlider2.add(registroservicio, "card3");
 
+        registrofinalizado.setBackground(new java.awt.Color(255, 255, 255));
         registrofinalizado.setName("registrofinalizado"); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel2.setText("REGISTRO REALIZADO");
+        jLabel2.setForeground(new java.awt.Color(51, 51, 55));
+        jLabel2.setText("Registro Realizado");
+
+        jPanel13.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel3.setText("Numero de Orden:");
+        jLabel3.setForeground(new java.awt.Color(51, 51, 55));
+        jLabel3.setText("Numero de Orden");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(51, 51, 55));
         jLabel4.setText("Enviar por Correo");
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(51, 51, 55));
         jLabel5.setText("Enviar por Telefono");
 
         EnviarCorreo.setBackground(new java.awt.Color(237, 31, 36));
+        EnviarCorreo.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         EnviarCorreo.setForeground(new java.awt.Color(255, 255, 255));
+        EnviarCorreo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Icon_SendEmail_32.png"))); // NOI18N
         EnviarCorreo.setText("Enviar");
+        EnviarCorreo.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
+        EnviarCorreo.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                EnviarCorreoMouseMoved(evt);
+            }
+        });
+        EnviarCorreo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                EnviarCorreoMouseExited(evt);
+            }
+        });
         EnviarCorreo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 EnviarCorreoActionPerformed(evt);
@@ -1072,8 +1205,21 @@ public class Registro extends javax.swing.JInternalFrame {
         });
 
         jButton7.setBackground(new java.awt.Color(237, 31, 36));
+        jButton7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton7.setForeground(new java.awt.Color(255, 255, 255));
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Icon_SendPhoneNumber_32.png"))); // NOI18N
         jButton7.setText("Enviar");
+        jButton7.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
+        jButton7.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jButton7MouseMoved(evt);
+            }
+        });
+        jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jButton7MouseExited(evt);
+            }
+        });
 
         lblGuia.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblGuia.setToolTipText("");
@@ -1083,36 +1229,37 @@ public class Registro extends javax.swing.JInternalFrame {
         jPanel13Layout.setHorizontalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel13Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel3))
-                .addGap(47, 47, 47)
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(EnviarCorreo, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lblGuia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
+                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(EnviarCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(54, 54, 54))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
+                        .addComponent(lblGuia, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20))))
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel13Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addGroup(jPanel13Layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(lblGuia, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
+                .addGap(21, 21, 21)
+                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblGuia, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3))
+                .addGap(17, 17, 17)
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(EnviarCorreo))
-                .addGap(21, 21, 21)
-                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5)
-                    .addComponent(jButton7))
-                .addContainerGap(55, Short.MAX_VALUE))
+                    .addComponent(EnviarCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5))
+                .addContainerGap(67, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout registrofinalizadoLayout = new javax.swing.GroupLayout(registrofinalizado);
@@ -1133,7 +1280,7 @@ public class Registro extends javax.swing.JInternalFrame {
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(336, Short.MAX_VALUE))
+                .addContainerGap(295, Short.MAX_VALUE))
         );
 
         rSPanelsSlider2.add(registrofinalizado, "card4");
@@ -1693,6 +1840,90 @@ public class Registro extends javax.swing.JInternalFrame {
     private void boxEncargadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boxEncargadoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_boxEncargadoActionPerformed
+
+    private void btnBuscarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarServicioMouseExited
+       btnBuscarServicio.setBackground(new java.awt.Color(237, 31, 36));
+       btnBuscarServicio.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+       btnBuscarServicio.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_btnBuscarServicioMouseExited
+
+    private void btnBuscarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarServicioMouseMoved
+       btnBuscarServicio.setBackground(new java.awt.Color(206, 26, 31));
+       btnBuscarServicio.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+       btnBuscarServicio.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_btnBuscarServicioMouseMoved
+
+    private void btnAgregarMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarMouseMoved
+       btnAgregar.setBackground(new java.awt.Color(206, 26, 31));
+       btnAgregar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+       btnAgregar.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_btnAgregarMouseMoved
+
+    private void btnAgregarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarMouseExited
+       btnAgregar.setBackground(new java.awt.Color(237, 31, 36));
+       btnAgregar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+       btnAgregar.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_btnAgregarMouseExited
+
+    private void btnatrasMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnatrasMouseMoved
+       btnatras.setBackground(new java.awt.Color(206, 26, 31));
+       btnatras.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+       btnatras.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_btnatrasMouseMoved
+
+    private void btnatrasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnatrasMouseExited
+       btnatras.setBackground(new java.awt.Color(237, 31, 36));
+       btnatras.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+       btnatras.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_btnatrasMouseExited
+
+    private void btnfinalizarMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnfinalizarMouseMoved
+       btnfinalizar.setBackground(new java.awt.Color(206, 26, 31));
+       btnfinalizar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+       btnfinalizar.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_btnfinalizarMouseMoved
+
+    private void btnfinalizarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnfinalizarMouseExited
+       btnfinalizar.setBackground(new java.awt.Color(237, 31, 36));
+       btnfinalizar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+       btnfinalizar.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_btnfinalizarMouseExited
+
+    private void btnEliminarMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarMouseMoved
+       btnEliminar.setBackground(new java.awt.Color(206, 26, 31));
+       btnEliminar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+       btnEliminar.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_btnEliminarMouseMoved
+
+    private void btnEliminarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarMouseExited
+       btnEliminar.setBackground(new java.awt.Color(237, 31, 36));
+       btnEliminar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+       btnEliminar.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_btnEliminarMouseExited
+
+    private void EnviarCorreoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EnviarCorreoMouseMoved
+       EnviarCorreo.setBackground(new java.awt.Color(206, 26, 31));
+       EnviarCorreo.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+       EnviarCorreo.setForeground(new java.awt.Color(255, 255, 255)); 
+    }//GEN-LAST:event_EnviarCorreoMouseMoved
+
+    private void EnviarCorreoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EnviarCorreoMouseExited
+       EnviarCorreo.setBackground(new java.awt.Color(237, 31, 36));
+       EnviarCorreo.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+       EnviarCorreo.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_EnviarCorreoMouseExited
+
+    private void jButton7MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseMoved
+       jButton7.setBackground(new java.awt.Color(206, 26, 31));
+       jButton7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+       jButton7.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_jButton7MouseMoved
+
+    private void jButton7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseExited
+       jButton7.setBackground(new java.awt.Color(237, 31, 36));
+       jButton7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+       jButton7.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_jButton7MouseExited
     
     public void sendEmail(String Correo, String cliente) throws IOException {
         

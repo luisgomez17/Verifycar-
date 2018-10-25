@@ -438,7 +438,7 @@ ArrayList<trabajadorVo> p ;
         editar.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 47, 1099, 132));
 
         jPanel10.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel10.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "TRABAJADOR", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
+        jPanel10.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Trabajador", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
 
         txtTrabajo2.setBackground(new java.awt.Color(255, 255, 255));
         txtTrabajo2.setForeground(new java.awt.Color(51, 51, 55));
@@ -597,7 +597,6 @@ ArrayList<trabajadorVo> p ;
         jLabel3.setText("Eliminar Usuario");
         borrar.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 0, 269, 40));
 
-        tbTrabajo.setBackground(new java.awt.Color(255, 255, 255));
         tbTrabajo.setForeground(new java.awt.Color(44, 44, 45));
         tbTrabajo.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

@@ -134,6 +134,7 @@ public class ActRegistro extends javax.swing.JInternalFrame {
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
+        txtOrden.setBackground(new java.awt.Color(255, 255, 255));
         txtOrden.setForeground(new java.awt.Color(51, 51, 51));
         txtOrden.setBorderColor(new java.awt.Color(51, 51, 51));
         txtOrden.setBotonColor(new java.awt.Color(102, 102, 102));
@@ -200,8 +201,9 @@ public class ActRegistro extends javax.swing.JInternalFrame {
         lbPlaca.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lbPlaca.setForeground(new java.awt.Color(51, 51, 55));
 
-        list.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Activos", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP));
-        list.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        list.setBackground(new java.awt.Color(255, 255, 255));
+        list.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Activos", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
+        list.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         list.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         list.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseReleased(java.awt.event.MouseEvent evt) {
@@ -316,7 +318,9 @@ public class ActRegistro extends javax.swing.JInternalFrame {
 
         jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 11, 1141, 189));
 
+        comentarios.setBackground(new java.awt.Color(255, 255, 255));
         comentarios.setColumns(20);
+        comentarios.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         comentarios.setForeground(new java.awt.Color(51, 51, 55));
         comentarios.setLineWrap(true);
         comentarios.setRows(5);
@@ -377,7 +381,7 @@ public class ActRegistro extends javax.swing.JInternalFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 311, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
