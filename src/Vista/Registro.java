@@ -875,12 +875,12 @@ public class Registro extends javax.swing.JInternalFrame {
 
         txtdescripcion.setBackground(new java.awt.Color(255, 255, 255));
         txtdescripcion.setColumns(20);
-<<<<<<< HEAD
+
         txtdescripcion.setLineWrap(true);
-=======
+
         txtdescripcion.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         txtdescripcion.setForeground(new java.awt.Color(51, 51, 55));
->>>>>>> 127d41dcc9f9768d951c13cca0361b17f82147ba
+
         txtdescripcion.setRows(5);
         txtdescripcion.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
         jScrollPane1.setViewportView(txtdescripcion);

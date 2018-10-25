@@ -18,7 +18,7 @@ public ArrayList<chatVo> getMensajes(String orden){
                     + " FROM chat as c "
                     + " JOIN orden as ord on ord.idorden = c.id_orden "
                     + " WHERE ord.numorden = ? "
-                    + " ORDER BY c.fechacomentario ");
+                    + " ORDER BY c.idchat ");
             
             preparedStatement.setString(1, orden);
             ResultSet resultSet = preparedStatement.executeQuery();
