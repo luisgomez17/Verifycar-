@@ -786,12 +786,13 @@ public class Registro extends javax.swing.JInternalFrame {
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Area", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
 
-        boxArea.setForeground(new java.awt.Color(51, 51, 55));
+        boxArea.setBackground(new java.awt.Color(255, 255, 255));
         boxArea.setAutoscrolls(true);
         boxArea.setColorArrow(new java.awt.Color(44, 44, 45));
         boxArea.setColorBorde(new java.awt.Color(44, 44, 45));
-        boxArea.setColorFondo(new java.awt.Color(255, 255, 255));
-        boxArea.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        boxArea.setColorFondo(new java.awt.Color(237, 31, 36));
+        boxArea.setFocusable(false);
+        boxArea.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         boxArea.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boxAreaActionPerformed(evt);
@@ -881,6 +882,7 @@ public class Registro extends javax.swing.JInternalFrame {
 
         jPanel7.setBackground(new java.awt.Color(255, 255, 255));
         jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Descripción", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 55))); // NOI18N
+        jPanel7.setForeground(new java.awt.Color(255, 255, 255));
 
         txtdescripcion.setBackground(new java.awt.Color(255, 255, 255));
         txtdescripcion.setColumns(20);
@@ -898,11 +900,12 @@ public class Registro extends javax.swing.JInternalFrame {
         jLabel8.setForeground(new java.awt.Color(51, 51, 55));
         jLabel8.setText("Encargado");
 
-        boxEncargado.setForeground(new java.awt.Color(0, 0, 0));
+        boxEncargado.setBackground(new java.awt.Color(255, 255, 255));
         boxEncargado.setAutoscrolls(true);
         boxEncargado.setColorArrow(new java.awt.Color(44, 44, 45));
         boxEncargado.setColorBorde(new java.awt.Color(44, 44, 45));
-        boxEncargado.setColorFondo(new java.awt.Color(255, 255, 255));
+        boxEncargado.setColorFondo(new java.awt.Color(237, 31, 36));
+        boxEncargado.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         boxEncargado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boxEncargadoActionPerformed(evt);
@@ -1146,17 +1149,12 @@ public class Registro extends javax.swing.JInternalFrame {
                         .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jPanel7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(btnatras, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(registroservicioLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 249, Short.MAX_VALUE)
-                        .addGroup(registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, 474, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(267, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, registroservicioLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnfinalizar, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, 474, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnfinalizar, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         registroservicioLayout.setVerticalGroup(
             registroservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
